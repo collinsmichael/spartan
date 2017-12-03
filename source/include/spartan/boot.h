@@ -22,6 +22,7 @@ typedef struct MBHDR {
     uint32_t vesa_resx;
     uint32_t vesa_resy;
     uint32_t vesa_bits;
+    // spartan additions
     uint32_t magic2;
     uint32_t info;
     uint32_t mzhdr;

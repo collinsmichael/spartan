@@ -16,4 +16,6 @@ typedef signed   __int16 int16_t;
 typedef signed   __int32 int32_t;
 typedef signed   __int64 int64_t;
 
+typedef unsigned __int32 size_t;
+
 #endif // STDINT_H

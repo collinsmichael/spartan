@@ -1,12 +1,11 @@
 /* ************************************************************************** */
 /* author(s) : Michael Collins                                                */
-/* file name : library/libc.c                                                 */
+/* file name : drivers/vesa/vesa.h                                            */
 /* file date : 2017/12/03                                                     */
-/* file info : c standard library                                             */
+/* file info : vesa video mode definitions                                    */
 /* ************************************************************************** */
-#include <arch.h>
-#include <boot.h>
 #include <libk.h>
+#include <boot.h>
 
 _declspec(dllexport)
 char *realloc(void) { return "force relocations"; }

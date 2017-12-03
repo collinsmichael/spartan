@@ -1,15 +1,12 @@
 /* ************************************************************************** */
 /* author(s) : Michael Collins                                                */
-/* file name : shell/desktop/desktop.c                                        */
+/* file name : include/posix/string.h                                         */
 /* file date : 2017/12/03                                                     */
-/* file info : desktop stacked window manager                                 */
+/* file info : string operations                                              */
 /* ************************************************************************** */
-#include <desktop.h>
+#ifndef STRING_H
+#define STRING_H
 
-_declspec(dllexport)
-char *realloc(void) { return "force relocations"; }
+#include <memory.h>
 
-int main(int argc, char *argv[]) {
-    for (;;);
-    return 1;
-}
+#endif // STRING_H

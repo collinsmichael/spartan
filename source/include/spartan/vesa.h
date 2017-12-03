@@ -1,15 +1,11 @@
 /* ************************************************************************** */
 /* author(s) : Michael Collins                                                */
-/* file name : shell/desktop/desktop.c                                        */
+/* file name : include/spartan/vesa.h                                         */
 /* file date : 2017/12/03                                                     */
-/* file info : desktop stacked window manager                                 */
+/* file info : vesa video mode definitions                                    */
 /* ************************************************************************** */
-#include <desktop.h>
+#ifndef VESA_H
+#define VESA_H
 
-_declspec(dllexport)
-char *realloc(void) { return "force relocations"; }
 
-int main(int argc, char *argv[]) {
-    for (;;);
-    return 1;
-}
+#endif // VESA_H

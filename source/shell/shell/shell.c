@@ -6,6 +6,9 @@
 /* ************************************************************************** */
 #include <shell.h>
 
+_declspec(dllexport)
+char *realloc(void) { return "force relocations"; }
+
 int main(int argc, char *argv[]) {
     for (;;);
     return 1;

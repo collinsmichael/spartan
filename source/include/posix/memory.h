@@ -1,15 +1,12 @@
 /* ************************************************************************** */
 /* author(s) : Michael Collins                                                */
-/* file name : shell/desktop/desktop.c                                        */
+/* file name : include/posix/memory.h                                         */
 /* file date : 2017/12/03                                                     */
-/* file info : desktop stacked window manager                                 */
+/* file info : memory operations                                              */
 /* ************************************************************************** */
-#include <desktop.h>
+#ifndef MEMORY_H
+#define MEMORY_H
 
-_declspec(dllexport)
-char *realloc(void) { return "force relocations"; }
+void *memcpy(void *dst, const void *src, size_t len);
 
-int main(int argc, char *argv[]) {
-    for (;;);
-    return 1;
-}
+#endif // MEMORY_H

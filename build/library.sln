@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libc", "library\libc\libc.vcxproj", "{51949444-C631-44B3-A8EC-71F97286B038}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0D5CC911-6EAA-4F9F-8B0A-73F5F13765C4} = {0D5CC911-6EAA-4F9F-8B0A-73F5F13765C4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libk", "library\libk\libk.vcxproj", "{0D5CC911-6EAA-4F9F-8B0A-73F5F13765C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51949444-C631-44B3-A8EC-71F97286B038}.Debug|Win32.ActiveCfg = Debug|Win32
+		{51949444-C631-44B3-A8EC-71F97286B038}.Debug|Win32.Build.0 = Debug|Win32
+		{51949444-C631-44B3-A8EC-71F97286B038}.Release|Win32.ActiveCfg = Release|Win32
+		{51949444-C631-44B3-A8EC-71F97286B038}.Release|Win32.Build.0 = Release|Win32
+		{0D5CC911-6EAA-4F9F-8B0A-73F5F13765C4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0D5CC911-6EAA-4F9F-8B0A-73F5F13765C4}.Debug|Win32.Build.0 = Debug|Win32
+		{0D5CC911-6EAA-4F9F-8B0A-73F5F13765C4}.Release|Win32.ActiveCfg = Release|Win32
+		{0D5CC911-6EAA-4F9F-8B0A-73F5F13765C4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
