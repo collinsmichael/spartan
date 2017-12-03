@@ -1,0 +1,9 @@
+*.cfg -crlf
+*.c   -crlf
+*.h   -crlf
+*.cpp -crlf
+*.txt -crlf
+*.asm -crlf
+*.lst -crlf
+*.cod -crlf
+*.md  -crlf
