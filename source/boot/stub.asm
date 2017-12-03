@@ -3,9 +3,7 @@
  ;----------------;--------------------------------;--------------------------------------;
  ; ivt:           ; 00000000 - 000003FF - 00000400 ; interrupt vector table               ;
  ; bda:           ; 00000400 - 000004FF - 00000100 ; bios data area                       ;
- ; boot loader    ; 00000500 - 000007FF - 00000300 ; boot loader                          ;
- ; ram disk       ; 00000800 - 0007FFFF - 0007FA00 ; free for use                         ;
- ;                ; 00080000 - 0009FBFF - 00080000 ; free for use, if it exists           ;
+ ; boot loader    ; 00000500 - 0009FBFF - 0009F700 ; boot loader                          ;
  ; xbda:          ; 0009FC00 - 0009FFFF - 00000400 ; extended bios data area              ;
  ; vram:          ; 000A0000 - 000FFFFF - 00060000 ; video memory                         ;
  ;-------------------------------------------------;--------------------------------------;
