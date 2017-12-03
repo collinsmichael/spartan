@@ -7,3 +7,4 @@
 *.lst -crlf
 *.cod -crlf
 *.md  -crlf
+*.sh  -crlf
