@@ -41,5 +41,14 @@
     <ClCompile Include="..\..\..\source\library\libc\memory.c">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\source\library\libc\malloc.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\library\libc\printf.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\library\libc\stdio.c">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

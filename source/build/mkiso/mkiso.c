@@ -1,16 +1,5 @@
-//BOOT.BIN (LBA + LEN)
-//#         LBA LBA LBA LBA LBA LBA LEN LEN LEN LEN LEN LEN
-//0000A930: D0 15 00 00 00 00 15 D0 24 13 00 00 00 00 13 24
-//
-//
-//DISK.IMG (LBA + LEN)
-//#         LBA LBA LBA LBA LBA LBA LEN LEN LEN LEN LEN LEN
-//0000A9A8: D0 15 00 00 00 00 15 D0 24 13 00 00 00 00 13 24
-//
-//
-//PrimaryVolumeDescriptor.TotalSectors
-//#         NUM NUM NUM NUM NUM NUM
-//00008050: D5 15 00 00 00 00 15 D5
+#define _CRT_SECURE_NO_WARNINGS
+#include <malloc.h>
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
@@ -44,6 +33,19 @@ int main(int argc, char *argv[]) {
     if (!iso) return printf("mkiso: out of memory for file! %s\n", blank);
     fseek(cfile, 0, SEEK_SET);
     fread(iso, 1, clen, cfile);
+    //BOOT.BIN (LBA + LEN)
+    //#         LBA LBA LBA LBA LBA LBA LEN LEN LEN LEN LEN LEN
+    //0000A930: D0 15 00 00 00 00 15 D0 24 13 00 00 00 00 13 24
+    //
+    //
+    //DISK.IMG (LBA + LEN)
+    //#         LBA LBA LBA LBA LBA LBA LEN LEN LEN LEN LEN LEN
+    //0000A9A8: D0 15 00 00 00 00 15 D0 24 13 00 00 00 00 13 24
+    //
+    //
+    //PrimaryVolumeDescriptor.TotalSectors
+    //#         NUM NUM NUM NUM NUM NUM
+    //00008050: D5 15 00 00 00 00 15 D5
 
     fseek(afile, 0, SEEK_END);
     int alen = ftell(afile);

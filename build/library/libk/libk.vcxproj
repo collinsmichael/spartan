@@ -11,13 +11,24 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\source\include\posix\malloc.h" />
+    <ClInclude Include="..\..\..\source\include\posix\memory.h" />
+    <ClInclude Include="..\..\..\source\include\posix\stdarg.h" />
+    <ClInclude Include="..\..\..\source\include\posix\stddef.h" />
     <ClInclude Include="..\..\..\source\include\posix\stdint.h" />
-    <ClInclude Include="..\..\..\source\include\spartan\arch.h" />
-    <ClInclude Include="..\..\..\source\include\spartan\boot.h" />
+    <ClInclude Include="..\..\..\source\include\posix\stdio.h" />
+    <ClInclude Include="..\..\..\source\include\posix\string.h" />
+    <ClInclude Include="..\..\..\source\include\spartan\driver.h" />
+    <ClInclude Include="..\..\..\source\include\spartan\fs.h" />
+    <ClInclude Include="..\..\..\source\include\spartan\inode.h" />
     <ClInclude Include="..\..\..\source\include\spartan\libk.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\source\library\libk\device.c" />
     <ClCompile Include="..\..\..\source\library\libk\libk.c" />
+    <ClCompile Include="..\..\..\source\library\libk\kalloc.c" />
+    <ClCompile Include="..\..\..\source\library\libk\memory.c" />
+    <ClCompile Include="..\..\..\source\library\libk\string.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0D5CC911-6EAA-4F9F-8B0A-73F5F13765C4}</ProjectGuid>
@@ -54,10 +65,11 @@
     <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
     <IncludePath>$(SolutionDir)..\source\include\posix\;$(SolutionDir)..\source\include\spartan\;</IncludePath>
     <ReferencePath />
-    <LibraryPath>$(SolutionDir)binary\</LibraryPath>
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)binary\drivers;</LibraryPath>
     <LibraryWPath />
     <SourcePath>$(SolutionDir)..\source\</SourcePath>
     <GenerateManifest>false</GenerateManifest>
+    <ExecutablePath>$(SolutionDir)..\deploy\;$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -65,10 +77,11 @@
     <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
     <IncludePath>$(SolutionDir)..\source\include\posix\;$(SolutionDir)..\source\include\spartan\;</IncludePath>
     <ReferencePath />
-    <LibraryPath>$(SolutionDir)binary\</LibraryPath>
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)binary\drivers;</LibraryPath>
     <LibraryWPath />
     <SourcePath>$(SolutionDir)..\source\</SourcePath>
     <GenerateManifest>false</GenerateManifest>
+    <ExecutablePath>$(SolutionDir)..\deploy\;$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -84,6 +97,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
+      <AdditionalOptions>/Oi- %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -111,7 +125,7 @@
       </PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
       <DebugInformationFormat>None</DebugInformationFormat>
@@ -123,6 +137,7 @@
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
       <ProgramDataBaseFileName />
+      <AdditionalOptions>/Oi- %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

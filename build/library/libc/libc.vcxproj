@@ -20,7 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\library\libc\libc.c" />
+    <ClCompile Include="..\..\..\source\library\libc\malloc.c" />
     <ClCompile Include="..\..\..\source\library\libc\memory.c" />
+    <ClCompile Include="..\..\..\source\library\libc\printf.c" />
+    <ClCompile Include="..\..\..\source\library\libc\stdio.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{51949444-C631-44B3-A8EC-71F97286B038}</ProjectGuid>
@@ -57,10 +60,11 @@
     <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
     <IncludePath>$(SolutionDir)..\source\include\posix\;$(SolutionDir)..\source\include\spartan\;</IncludePath>
     <ReferencePath />
-    <LibraryPath>$(SolutionDir)binary\</LibraryPath>
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)binary\drivers;</LibraryPath>
     <LibraryWPath />
     <SourcePath>$(SolutionDir)..\source\</SourcePath>
     <GenerateManifest>false</GenerateManifest>
+    <ExecutablePath>$(SolutionDir)..\deploy\;$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -68,10 +72,11 @@
     <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
     <IncludePath>$(SolutionDir)..\source\include\posix\;$(SolutionDir)..\source\include\spartan\;</IncludePath>
     <ReferencePath />
-    <LibraryPath>$(SolutionDir)binary\</LibraryPath>
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)binary\drivers;</LibraryPath>
     <LibraryWPath />
     <SourcePath>$(SolutionDir)..\source\</SourcePath>
     <GenerateManifest>false</GenerateManifest>
+    <ExecutablePath>$(SolutionDir)..\deploy\;$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -92,7 +97,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies />
+      <AdditionalDependencies>libk.lib;fs.lib;</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <ManifestFile />
       <EntryPointSymbol>main</EntryPointSymbol>
@@ -137,7 +142,7 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies />
+      <AdditionalDependencies>libk.lib;fs.lib;</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <ManifestFile />
       <ProgramDatabaseFile />

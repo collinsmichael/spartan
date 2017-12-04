@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\source\tools\mkfs\mkfs.c" />
+    <ClCompile Include="..\source\tools\mkfs\mkvol.c" />
+    <ClCompile Include="..\source\kernel\fileio\disk.c">
+      <Filter>source\fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\fileio\ffind.c">
+      <Filter>source\fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\fileio\fileio.c">
+      <Filter>source\fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\fileio\fnext.c">
+      <Filter>source\fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\fileio\inode.c">
+      <Filter>source\fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\fileio\mkdir.c">
+      <Filter>source\fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\fileio\rmdir.c">
+      <Filter>source\fileio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\user\user.c">
+      <Filter>source\user</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\image.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tools\link\linker.c">
+      <Filter>linker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tools\link\reloc.c">
+      <Filter>linker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\tools\mkfs\lzss.c">
+      <Filter>lzss</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\tools\mkfs\mkfs.h" />
+    <ClInclude Include="..\source\include\inode.h">
+      <Filter>source\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\tools\mkfs\lzss.h">
+      <Filter>lzss</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{57049abe-bb33-4052-a672-4fa6137debf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\fileio">
+      <UniqueIdentifier>{803f5a43-96ca-44a7-bb11-99c35344d489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\user">
+      <UniqueIdentifier>{b46117e4-2fcf-4a68-a745-790f5c165a52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\include">
+      <UniqueIdentifier>{e2140250-432b-445b-b1dc-339df7b4aa5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="linker">
+      <UniqueIdentifier>{248add21-9bcc-479b-b935-1638566142c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lzss">
+      <UniqueIdentifier>{b6f503a9-7c0e-4f2e-ac9b-a5c612d974b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

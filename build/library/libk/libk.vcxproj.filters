@@ -15,21 +15,54 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\source\include\spartan\arch.h">
-      <Filter>include\spartan</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\source\include\spartan\boot.h">
-      <Filter>include\spartan</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\source\include\spartan\libk.h">
       <Filter>include\spartan</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\source\include\posix\stdint.h">
       <Filter>include\posix</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\source\include\posix\malloc.h">
+      <Filter>include\posix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\include\posix\memory.h">
+      <Filter>include\posix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\include\posix\stdarg.h">
+      <Filter>include\posix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\include\posix\stddef.h">
+      <Filter>include\posix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\include\posix\stdio.h">
+      <Filter>include\posix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\include\posix\string.h">
+      <Filter>include\posix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\include\spartan\driver.h">
+      <Filter>include\spartan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\include\spartan\fs.h">
+      <Filter>include\spartan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\include\spartan\inode.h">
+      <Filter>include\spartan</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\library\libk\libk.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\library\libk\memory.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\library\libk\string.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\library\libk\kalloc.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\library\libk\device.c">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>

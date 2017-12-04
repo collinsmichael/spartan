@@ -1,12 +1,9 @@
-/* ************************************************************************** */
-/* author(s) : Michael Collins                                                */
-/* file name : include/posix/memory.h                                         */
-/* file date : 2017/12/03                                                     */
-/* file info : memory operations                                              */
-/* ************************************************************************** */
 #ifndef MEMORY_H
 #define MEMORY_H
 
-void *memcpy(void *dst, const void *src, size_t len);
+void *memchr(const void *buffer, int c, int size);
+int   memcmp(const void *target, const void *source, int size);
+void *memcpy(void *target, const void *source, int size);
+void *memset(void *buffer, int c, int size);
 
 #endif // MEMORY_H

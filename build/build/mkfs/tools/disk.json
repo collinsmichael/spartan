@@ -1,0 +1,37 @@
+ {
+    "volume":{
+        "label":"OP SYS (2017)",
+        "author":"MICHAEL COLLINS",
+        "publisher":"LIMERICK INSTITUTE OF TECHNOLOGY",
+        "origin":"0x00100000",
+        "length":"0x00F00000",
+        "inodes":"0x00000400",
+        "blocks":"0x00000400",
+        "kernel":"sys/kernel.exe"
+    },
+    "disk":[
+        {"access":"vlcdrwxlcdrwxlcdrwx", "path":"sys"},
+        {"access":"vlcdrwxlcdrwxlcdrwx", "path":"usr/mike"},
+        {"access":"vlcdrwxlcdrwxlcdrwx", "path":"usr/guest"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"},
+        {"access":"blcdrwxlcdrwxlcdrwx", "path":"sys/kernel.dll"}
+    ]
+}

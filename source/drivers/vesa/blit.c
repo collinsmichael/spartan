@@ -1,3 +1,5 @@
+#include <memory.h>
+
 _declspec(dllexport)
 int blit(void *screen) {
     int resx = 1024;

@@ -5,6 +5,14 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mkiso", "build\mkiso\mkiso.vcxproj", "{7A9A1215-1E93-45EC-B966-B7FCF5AD71D5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mkfs", "build\mkfs\msvc2013\mkfs.vcxproj", "{34CE0B3E-9E78-459D-A92A-1B781754CF36}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7A9A1215-1E93-45EC-B966-B7FCF5AD71D5} = {7A9A1215-1E93-45EC-B966-B7FCF5AD71D5}
+		{5378C429-206C-4760-8AFA-CC4C3DD4B1FB} = {5378C429-206C-4760-8AFA-CC4C3DD4B1FB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mkrd", "build\mkrd\mkrd.vcxproj", "{5378C429-206C-4760-8AFA-CC4C3DD4B1FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +23,14 @@ Global
 		{7A9A1215-1E93-45EC-B966-B7FCF5AD71D5}.Debug|Win32.Build.0 = Debug|Win32
 		{7A9A1215-1E93-45EC-B966-B7FCF5AD71D5}.Release|Win32.ActiveCfg = Release|Win32
 		{7A9A1215-1E93-45EC-B966-B7FCF5AD71D5}.Release|Win32.Build.0 = Release|Win32
+		{34CE0B3E-9E78-459D-A92A-1B781754CF36}.Debug|Win32.ActiveCfg = Debug|Win32
+		{34CE0B3E-9E78-459D-A92A-1B781754CF36}.Debug|Win32.Build.0 = Debug|Win32
+		{34CE0B3E-9E78-459D-A92A-1B781754CF36}.Release|Win32.ActiveCfg = Release|Win32
+		{34CE0B3E-9E78-459D-A92A-1B781754CF36}.Release|Win32.Build.0 = Release|Win32
+		{5378C429-206C-4760-8AFA-CC4C3DD4B1FB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5378C429-206C-4760-8AFA-CC4C3DD4B1FB}.Debug|Win32.Build.0 = Debug|Win32
+		{5378C429-206C-4760-8AFA-CC4C3DD4B1FB}.Release|Win32.ActiveCfg = Release|Win32
+		{5378C429-206C-4760-8AFA-CC4C3DD4B1FB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

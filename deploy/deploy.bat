@@ -10,13 +10,12 @@ set      RAMDISK=%cd%\deploy\ramdisk
 set      CDROM=%cd%\deploy\cdrom
 set      OUTDIR=%cd%
 
-
 fasm     %SRCPATH%\kernel\grub\boot.asm %BINPATH%\boot.bin
 copy     %BINPATH%\*.exe %RAMDISK%\bin\
 copy     %DRIVERS%\*.dll %RAMDISK%\dev\
 copy     %BINPATH%\*.dll %RAMDISK%\sys\
 
-mkfs     %RAMDISK%\ %DEPLOY%\ramdisk.img sys/kernel.dll 15 9 3
+mkrd     0x00101000 %RAMDISK%\ %DEPLOY%\ramdisk.img sys/kernel.dll 15 9 3
 cd       deploy
 mkimg144 -bs %DEPLOY%\fat12.bin -us %DEPLOY%\ramdisk.img -o %OUTDIR%\floppy.img
 

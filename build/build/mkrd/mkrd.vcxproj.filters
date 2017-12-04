@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{28182a13-a577-432e-836a-c4d242af7ef8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\link">
+      <UniqueIdentifier>{3c165789-18c5-4f2d-a882-4887282dabf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\lzss">
+      <UniqueIdentifier>{26d97aea-f6ae-4161-ab93-6123b478a9db}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\build\mkfs\image.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\build\mkfs\mkfs.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\build\mkfs\mkvol.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\build\mkfs\link\linker.c">
+      <Filter>source\link</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\build\mkfs\link\reloc.c">
+      <Filter>source\link</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\build\mkfs\lzss\lzss.c">
+      <Filter>source\lzss</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\build\mkfs\mkfs.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\build\mkfs\lzss\lzss.h">
+      <Filter>source\lzss</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

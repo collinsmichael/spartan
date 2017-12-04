@@ -18,6 +18,9 @@
     <ClCompile Include="..\..\..\source\kernel\kernel\kernel.c">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\source\kernel\kernel\driver.c">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\source\include\spartan\arch.h">
@@ -31,6 +34,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\source\include\posix\stdint.h">
       <Filter>include\posix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\include\spartan\driver.h">
+      <Filter>include\spartan</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

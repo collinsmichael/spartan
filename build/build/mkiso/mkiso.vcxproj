@@ -43,11 +43,17 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)..\deploy\</OutDir>
     <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)binary\drivers;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);</LibraryPath>
+    <ExecutablePath>$(SolutionDir)tools\;$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <IncludePath>$(SolutionDir)build\mkfs\source\include\;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)source\include\;</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)..\deploy\</OutDir>
     <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)binary\drivers;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);</LibraryPath>
+    <ExecutablePath>$(SolutionDir)tools\;$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <IncludePath>$(SolutionDir)build\mkfs\source\include\;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)source\include\;</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

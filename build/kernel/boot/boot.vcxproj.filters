@@ -27,6 +27,9 @@
     <ClInclude Include="..\..\..\source\include\posix\stdint.h">
       <Filter>include\posix</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\source\include\spartan\exe.h">
+      <Filter>include\spartan</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\kernel\boot\boot.c">

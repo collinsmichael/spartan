@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\source\kernel\kernel\driver.c" />
     <ClCompile Include="..\..\..\source\kernel\kernel\kernel.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\source\include\posix\stdint.h" />
     <ClInclude Include="..\..\..\source\include\spartan\arch.h" />
     <ClInclude Include="..\..\..\source\include\spartan\boot.h" />
+    <ClInclude Include="..\..\..\source\include\spartan\driver.h" />
     <ClInclude Include="..\..\..\source\include\spartan\libk.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -54,7 +56,7 @@
     <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
     <IncludePath>$(SolutionDir)..\source\include\posix\;$(SolutionDir)..\source\include\spartan\;</IncludePath>
     <ReferencePath />
-    <LibraryPath>$(SolutionDir)binary\</LibraryPath>
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)binary\drivers;</LibraryPath>
     <LibraryWPath />
     <SourcePath>$(SolutionDir)..\source\</SourcePath>
     <GenerateManifest>false</GenerateManifest>
@@ -66,7 +68,7 @@
     <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
     <IncludePath>$(SolutionDir)..\source\include\posix\;$(SolutionDir)..\source\include\spartan\;</IncludePath>
     <ReferencePath />
-    <LibraryPath>$(SolutionDir)binary\</LibraryPath>
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)binary\drivers;</LibraryPath>
     <LibraryWPath />
     <SourcePath>$(SolutionDir)..\source\</SourcePath>
     <GenerateManifest>false</GenerateManifest>
@@ -86,11 +88,12 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
+      <AdditionalOptions>/Oi- %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies />
+      <AdditionalDependencies>libk.lib;</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <ManifestFile />
       <EntryPointSymbol>main</EntryPointSymbol>
@@ -116,7 +119,7 @@
       </PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
       <PreprocessorDefinitions>
       </PreprocessorDefinitions>
       <DebugInformationFormat>None</DebugInformationFormat>
@@ -128,13 +131,14 @@
       <PrecompiledHeaderFile />
       <PrecompiledHeaderOutputFile />
       <ProgramDataBaseFileName />
+      <AdditionalOptions>/Oi- %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies />
+      <AdditionalDependencies>libk.lib;</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <ManifestFile />
       <ProgramDatabaseFile />
