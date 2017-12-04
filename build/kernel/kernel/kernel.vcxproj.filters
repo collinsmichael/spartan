@@ -38,5 +38,11 @@
     <ClInclude Include="..\..\..\source\include\spartan\driver.h">
       <Filter>include\spartan</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\source\include\spartan\multiboot.h">
+      <Filter>include\spartan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\include\spartan\vesa.h">
+      <Filter>include\spartan</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

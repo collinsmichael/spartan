@@ -20,6 +20,8 @@
     <ClInclude Include="..\..\..\source\include\spartan\boot.h" />
     <ClInclude Include="..\..\..\source\include\spartan\driver.h" />
     <ClInclude Include="..\..\..\source\include\spartan\libk.h" />
+    <ClInclude Include="..\..\..\source\include\spartan\multiboot.h" />
+    <ClInclude Include="..\..\..\source\include\spartan\vesa.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{F7D02B00-2B0C-4DF5-B9FA-9350EBFB2C48}</ProjectGuid>
