@@ -4,7 +4,6 @@
 #include <windows.h>
 #include <inode.h>
 
-void init_image(void);
 int stats(void);
 
 // set up 15MB of disk space starting at physical address 1MB
@@ -131,7 +130,6 @@ int mkroot(char *img) {
 }
 
 int mkvol(char *root, char *img, int len) {
-    init_image();
     start = strlen(root)+1;
     mkroot(image);
     dir_bfs(root, "");

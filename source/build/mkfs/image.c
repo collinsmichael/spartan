@@ -4,12 +4,15 @@
 #include <inode.h>
 #include "mkfs.h"
 
+void mmstart(struct block_t *mm);
+
 extern int imagebase;
 char ram[64*MB];
 char *image = ram;
-volume_t *volume;
-block_t  *blocks;
-inode_t  *inodes;
+struct volume_t *volume;
+struct block_t  *blocks;
+struct inode_t  *inodes;
+struct block_t   memmap[4096];
 
 void init_image(void) {
     volume = (volume_t*)&ram[imagebase];
@@ -36,6 +39,9 @@ void init_image(void) {
     strcpy(volume->publisher, "LIMERICK INSTITUTE OF TECHNOLOGY");
     blocks[0].base = FIRST;
     blocks[0].size = FINAL - FIRST;
-
+ 
+    memmap[0].base = (int)ram;
+    memmap[0].size = sizeof(ram);
+    mmstart(memmap);
     fsstart(ram, imagebase);
 }

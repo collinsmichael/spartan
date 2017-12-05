@@ -101,8 +101,6 @@
       <DataExecutionPrevention>false</DataExecutionPrevention>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <AdditionalOptions>/STUB:$(SolutionDir)binary\stub.mz
-/FILEALIGN:64
-/ALIGN:64
 /IGNORE:4060
 /IGNORE:4086
 /IGNORE:4108
@@ -148,11 +146,12 @@
       <DataExecutionPrevention>false</DataExecutionPrevention>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <AdditionalOptions>/STUB:$(SolutionDir)binary\stub.mz
-/FILEALIGN:64
-/ALIGN:64
 /IGNORE:4060
 /IGNORE:4086
- %(AdditionalOptions)</AdditionalOptions>
+/IGNORE:4108
+/ALIGN:64
+/FILEALIGN:64
+</AdditionalOptions>
     </Link>
     <PostBuildEvent>
       <Command>

@@ -9,7 +9,6 @@
 #include <stdint.h>
 #include <stddef.h>
 
-_declspec(dllexport)
 struct block_t *memmap;
 
 /* --------------------------------------------------------- */
@@ -68,4 +67,9 @@ void kfree(void *addr, uint32_t size) {
 			bp++;
 		} while (size = s);
 	}
+}
+
+_declspec(dllexport)
+void mmstart(struct block_t *mm) {
+    memmap = mm;
 }

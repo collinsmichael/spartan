@@ -6,6 +6,8 @@
 #include "mkfs.h"
 #include "lzss\lzss.h"
 
+void init_image(void);
+
 int encode(char *decoded, int dsize, char *encoded, int esize, uint8_t EI, uint8_t EJ, uint8_t P);
 int imagebase;
 char fname[1024];
@@ -54,6 +56,7 @@ int main(int argc, char *argv[]) {
     uint8_t EI = (uint8_t)strtol(argv[5], 0, 0);
     uint8_t EJ = (uint8_t)strtol(argv[6], 0, 0);
     uint8_t P  = (uint8_t)strtol(argv[7], 0, 0);
+    init_image();
 
     if (!SetCurrentDirectoryA(root)) {
         return printf(" mkfs [fail] directory not found! '%s'\n", root);

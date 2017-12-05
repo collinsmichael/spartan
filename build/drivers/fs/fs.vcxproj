@@ -107,15 +107,14 @@
       <DataExecutionPrevention>false</DataExecutionPrevention>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <AdditionalOptions>/STUB:$(SolutionDir)binary\stub.mz
-/FILEALIGN:64
-/ALIGN:64
 /IGNORE:4060
 /IGNORE:4086
 /IGNORE:4108
  %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PostBuildEvent>
-      <Command>cmd /c "$(SolutionDir)..\deploy\deploy.bat"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -153,14 +152,16 @@
       <DataExecutionPrevention>false</DataExecutionPrevention>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <AdditionalOptions>/STUB:$(SolutionDir)binary\stub.mz
-/FILEALIGN:64
-/ALIGN:64
 /IGNORE:4060
 /IGNORE:4086
- %(AdditionalOptions)</AdditionalOptions>
+/IGNORE:4108
+/ALIGN:64
+/FILEALIGN:64
+</AdditionalOptions>
     </Link>
     <PostBuildEvent>
-      <Command>cmd /c "$(SolutionDir)..\deploy\deploy.bat"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

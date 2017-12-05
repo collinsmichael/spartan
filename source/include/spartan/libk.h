@@ -32,6 +32,7 @@ typedef struct driver_t {
 
 void *kalloc(uint32_t size);
 void kfree(void *addr, uint32_t size);
+void mmstart(struct block_t *mm);
 
 #pragma pack(pop)
 #endif // LIBK_H
