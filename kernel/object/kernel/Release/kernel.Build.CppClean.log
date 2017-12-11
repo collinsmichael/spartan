@@ -1,0 +1,15 @@
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\test.obj
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\kernel.obj
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\init.obj
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\ps2.obj
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\tss.obj
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\pic.obj
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\idt.obj
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\gdt.obj
+c:\users\cex123\desktop\osdev\basic\kernel\binary\kernel.dll
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\kernel.tlog\cl.command.1.tlog
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\kernel.tlog\cl.read.1.tlog
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\kernel.tlog\cl.write.1.tlog
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\kernel.tlog\link.command.1.tlog
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\kernel.tlog\link.read.1.tlog
+c:\users\cex123\desktop\osdev\basic\kernel\object\kernel\release\kernel.tlog\link.write.1.tlog

@@ -1,0 +1,58 @@
+﻿Build started 11/12/2017 20:05:40.
+     1>Project "C:\Users\cex123\Desktop\OSDEV\basic\kernel\kernel\kernel.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /nologo /W3 /WX- /O1 /Oi /Os /Oy /GT /u /Gm- /MD /GS- /Gy /arch:IA32 /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\cex123\Desktop\OSDEV\basic\kernel\object\kernel\Release\\" /Gd /TC /analyze- /errorReport:prompt ..\source\kernel\arch\gdt.c ..\source\kernel\arch\idt.c ..\source\kernel\arch\pic.c ..\source\kernel\arch\tss.c ..\source\kernel\drivers\ps2.c ..\source\kernel\init.c ..\source\kernel\kernel.c ..\source\kernel\test.c
+         gdt.c
+         idt.c
+         pic.c
+         tss.c
+         ps2.c
+         init.c
+         kernel.c
+     1>..\source\kernel\kernel.c(8): warning C4013: 'test' undefined; assuming extern returning int
+         test.c
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\cex123\Desktop\OSDEV\basic\kernel\binary\kernel.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\cex123\Desktop\OSDEV\basic\kernel\binary\ arch.obj /NODEFAULTLIB /MANIFEST:NO /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /TLBID:1 /ENTRY:"main" /BASE:"0x00100000" /DYNAMICBASE /FIXED:NO /NXCOMPAT:NO /IMPLIB:"C:\Users\cex123\Desktop\OSDEV\basic\kernel\binary\kernel.lib" /MACHINE:X86 /SAFESEH:NO /STUB:C:\Users\cex123\Desktop\OSDEV\basic\kernel\binary\stub.mz
+         /IGNORE:4060
+         /IGNORE:4086
+         /IGNORE:4108
+         /ALIGN:64
+         /FILEALIGN:64
+          /DLL C:\Users\cex123\Desktop\OSDEV\basic\kernel\object\kernel\Release\gdt.obj
+         C:\Users\cex123\Desktop\OSDEV\basic\kernel\object\kernel\Release\idt.obj
+         C:\Users\cex123\Desktop\OSDEV\basic\kernel\object\kernel\Release\pic.obj
+         C:\Users\cex123\Desktop\OSDEV\basic\kernel\object\kernel\Release\tss.obj
+         C:\Users\cex123\Desktop\OSDEV\basic\kernel\object\kernel\Release\ps2.obj
+         C:\Users\cex123\Desktop\OSDEV\basic\kernel\object\kernel\Release\init.obj
+         C:\Users\cex123\Desktop\OSDEV\basic\kernel\object\kernel\Release\kernel.obj
+         C:\Users\cex123\Desktop\OSDEV\basic\kernel\object\kernel\Release\test.obj
+         kernel.vcxproj -> C:\Users\cex123\Desktop\OSDEV\basic\kernel\binary\kernel.dll
+       PostBuildEvent:
+         cmd /c "C:\Users\cex123\Desktop\OSDEV\basic\kernel\binary\deploy.bat"
+         :VCEnd
+          ============================================================== 
+          rebase - version 1.0 - Michael Collins (2017)                  
+          ============================================================== 
+          rebase [done] kernel.dll (00101000)
+         
+          ==============================================================
+          mkiso - version 1.0 - Michael Collins (2017)                  
+          ==============================================================
+          mkiso: input  = blank.iso
+          mkiso: boot   = boot.bin
+          mkiso: disk   = kernel.dll
+          mkiso: output = cdrom.iso
+          mkiso: boot lba = 000015D0 (5584)
+          mkiso: boot len = 00001000 (4096) of 00001000 (4096)
+          mkiso: disk ptr = 00100000 (1048576)
+          mkiso: disk lba = 000015D2 (5586)
+          mkiso: disk len = 00000C40 (3136) of 00001000 (4096)
+          mkiso: disk ptr = 00101000 (1052672)
+          mkiso: success!
+         
+     1>Done Building Project "C:\Users\cex123\Desktop\OSDEV\basic\kernel\kernel\kernel.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.89
