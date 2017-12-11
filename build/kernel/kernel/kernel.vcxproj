@@ -13,6 +13,8 @@
   <ItemGroup>
     <ClCompile Include="..\..\..\source\kernel\kernel\driver.c" />
     <ClCompile Include="..\..\..\source\kernel\kernel\kernel.c" />
+    <ClCompile Include="..\..\..\source\kernel\kernel\multiboot.c" />
+    <ClCompile Include="..\..\..\source\kernel\kernel\pipe.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\source\include\posix\stdint.h" />
@@ -20,7 +22,10 @@
     <ClInclude Include="..\..\..\source\include\spartan\boot.h" />
     <ClInclude Include="..\..\..\source\include\spartan\driver.h" />
     <ClInclude Include="..\..\..\source\include\spartan\libk.h" />
+    <ClInclude Include="..\..\..\source\include\spartan\limits.h" />
     <ClInclude Include="..\..\..\source\include\spartan\multiboot.h" />
+    <ClInclude Include="..\..\..\source\include\spartan\pipe.h" />
+    <ClInclude Include="..\..\..\source\include\spartan\vesa-def.h" />
     <ClInclude Include="..\..\..\source\include\spartan\vesa.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -95,7 +100,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>libk.lib;</AdditionalDependencies>
+      <AdditionalDependencies>libk.lib;arch386.obj;vesa.lib;fs.lib;</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <ManifestFile />
       <EntryPointSymbol>main</EntryPointSymbol>
@@ -106,6 +111,8 @@
 /IGNORE:4060
 /IGNORE:4086
 /IGNORE:4108
+/ALIGN:4096
+/FILEALIGN:4096
  %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PostBuildEvent>
@@ -139,7 +146,7 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>libk.lib;</AdditionalDependencies>
+      <AdditionalDependencies>libk.lib;arch386.obj;vesa.lib;fs.lib;</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <ManifestFile />
       <ProgramDatabaseFile />

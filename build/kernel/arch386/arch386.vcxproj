@@ -93,6 +93,8 @@
 /IGNORE:4060
 /IGNORE:4086
 /IGNORE:4108
+/ALIGN:4096
+/FILEALIGN:4096
  %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PostBuildEvent>
@@ -149,6 +151,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\source\kernel\arch386\arch386.c" />
+    <ClCompile Include="..\..\..\source\kernel\arch386\gdt.c" />
+    <ClCompile Include="..\..\..\source\kernel\arch386\idt.c" />
+    <ClCompile Include="..\..\..\source\kernel\arch386\tss.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\source\include\posix\stdint.h" />

@@ -96,3 +96,12 @@ int renode(int inode, uint32_t size) {
     align(inodes[inode].capacity, PAGE_SIZE);
     return inode;
 }
+
+/* ************************************************************************** */
+/* resize the block assigned to a given inode                                 */
+/* ************************************************************************** */
+_declspec(dllexport)
+char *fblock(int inode) {
+    if (inode < 0) return 0;
+    return (char*)inodes[inode].base;
+}

@@ -86,6 +86,7 @@ int relocate(void) {
     memset(root, 0, sizeof(root));
     int parent = ffind("", root, sizeof(root));
     if (parent < 0) return 0;
+    memset(root, 0, sizeof(root));
     strcpy(root, "..");
     for (;;) {
         int child = fnext(parent, root, sizeof(root));

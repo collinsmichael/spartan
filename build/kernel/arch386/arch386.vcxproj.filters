@@ -18,6 +18,15 @@
     <ClCompile Include="..\..\..\source\kernel\arch386\arch386.c">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\source\kernel\arch386\gdt.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\kernel\arch386\idt.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\kernel\arch386\tss.c">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\source\include\spartan\arch.h">

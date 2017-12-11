@@ -1,4 +1,8 @@
+#include <boot.h>
+#include <exe.h>
+#include <fs.h>
 #include <libk.h>
+#include <multiboot.h>
 #include <stddef.h>
 #include <stdio.h>
 #include <string.h>
@@ -9,8 +13,18 @@ driver_t *cga(void); // cga
 driver_t *tty(void); // terminal
 
 
-_declspec(dllexport)
-int driver_init(void) {
+int driver_init(int magic, multiboot_info *mboot, MBHDR *mbhdr) {
+    char fname[256];
+    int dir = ffind("/dev/..", fname, sizeof(fname));
+    if (dir < 0) return 0;
+    for (;;) {
+        int fd = fnext(dir, fname, sizeof(fname));
+        if (fd <= 0) break;
+        for (int i = 0; fname[i]; fname[i] = tolower(fname[i]));
+        if (strstr(fname, ".dll") != 0) continue;
+        MZHDR *mzhdr = (MZHDR*)fblock(fd);
+    }
+
 /*
     devices[0] = rd();
     devices[(int)stdin]  = kb();

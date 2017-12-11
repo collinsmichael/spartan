@@ -1,10 +1,10 @@
 #include <boot.h>
 #include <inode.h>
 
-char     *image  = 0;
-volume_t *volume = (volume_t*)(0x00101000);
-block_t  *blocks = (block_t*)(0x00101000 + sizeof(volume_t));
-inode_t  *inodes = (inode_t*)(0x00101000 + sizeof(volume_t) + sizeof(block_t)*MAX_BLOCKS);
+char     *image;
+volume_t *volume;
+block_t  *blocks;
+inode_t  *inodes;
 
 _declspec(dllexport)
 int initfs(int magic, uint32_t *info[], MBHDR *mbhdr) {

@@ -60,7 +60,7 @@ int strcmp(const char *target, const char *source) {
     if (!target || !source) return 0;
     for (;;) {
         char a = *target++;
-        char b = *source++;
+        const char b = *source++;
         if (a < b) return -1;
         if (a > b) return 1;
         if (a == 0) return 0;
@@ -70,7 +70,10 @@ int strcmp(const char *target, const char *source) {
 _declspec(dllexport)
 char *strcpy(char *target, const char *source) {
     if (!target || !source) return 0;
-    while (*source) *target++ = *source++;
+    char *trg = target;
+    const char *src = source;
+    while (*src) *trg++ = *src++;
+    *trg = 0;
     return target;
 }
 

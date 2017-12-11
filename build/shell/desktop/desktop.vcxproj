@@ -99,6 +99,8 @@
 /IGNORE:4060
 /IGNORE:4086
 /IGNORE:4108
+/ALIGN:4096
+/FILEALIGN:4096
  %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <PostBuildEvent>

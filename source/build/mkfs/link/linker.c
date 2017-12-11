@@ -24,6 +24,22 @@ int get_proc(char *base, char *name) {
     return 0;
 }
 
+XFILE *openlib(char *libname, char *mode) {
+    static char path[1024];
+    static char *dir[] = { // TODO REPLACE WITH ENVIRONMENT VARIABLES
+        "sys/",
+        "dev/",
+        "bin/"
+    };
+    for (int i = 0; i < elementsof(dir); i++) {
+        strcpy(path, dir[i]);
+        strcat(path, libname);
+        XFILE *file = xopen(path, mode);
+        if (file) return file;
+    }
+    return 0;
+}
+
 int link(char *path, int base, int size) {
     //printf("[linker] %s\n", path);
 
@@ -39,25 +55,27 @@ int link(char *path, int base, int size) {
     while (imports->name) {
         char *library = &binary[imports->name];
 
+        /*
         static char sys[1024];
         static char app[1024];
         sprintf(sys, "sys/%s", library);
         sprintf(app, "bin/%s", library);
-
         char *target = sys;
         XFILE *file = xopen(sys, "rb");
         if (!file) file = xopen(target = app, "rb");
+        */
+        static char target[1024];
+        XFILE *file = openlib(library, "rb");
         if (!file) return 0 & printf("error file not found! '%s'\n", library);
         int dll_base = inodes[file->inode].base;
         char *dll = &image[dll_base];
         xclose(file);
 
-
         uint32_t *thunk = (uint32_t*)&binary[imports->first_thunk];
         while (*thunk) {
             peimportname_t *import = (peimportname_t*)&binary[*thunk];
             int proc = get_proc(dll, import->name);
-            if (!proc) return 0 & printf("error dll %s does not contain function %s\n", target, import->name);
+            if (!proc) return 0 & printf("error dll %s does not contain function %s\n", library, import->name);
 
             uint32_t func = (uint32_t)(dll_base + proc);
             *thunk++ = (uint32_t)func;

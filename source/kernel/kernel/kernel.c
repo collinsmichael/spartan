@@ -8,14 +8,26 @@
 _declspec(dllexport)
 char *realloc(void) { return "force relocations"; }
 
-int _stdcall main(int magic, multiboot_info *mboot, MBHDR *mbhdr) {
-    if (mboot->vbe_mode_info) {
-        modeinfo_t *mode = (modeinfo_t*)mboot->vbe_mode_info;
-        void    *frame = (void*)mode->physbaseptr;
-        uint32_t resx  = mode->resx;
-        uint32_t resy  = mode->resy;
-        uint32_t bits  = mode->bits;
-        memset(frame, 0xFFFFFFFF, resx*resy*bits/8);
+#include <pipe.h>
+uint32_t t;
+void dummy(void) {
+    static PIPE fd = { 0,0,1024*768*32/8,(uint8_t*)0x01000000 };
+    uint32_t *frame = (uint32_t*)fd.ring;
+    MODE_INFO *mode = GetModeInfo();
+    for (int y = 0; y < mode->ResY; y++)
+    for (int x = 0; x < mode->ResX; x++) {
+        uint8_t c = (x ^ y) + t;
+        frame[y*mode->ResX + x] = c*0x01010101;
     }
+    t++;
+    flush(&fd);
+}
+
+int multiboot(int magic, multiboot_info *mboot, MBHDR *mbhdr);
+
+int _stdcall main(int magic, multiboot_info *mboot, MBHDR *mbhdr) {
+    //if (!arch_init()) for (;;);
+    if (!multiboot(magic, mboot, mbhdr)) for (;;);
+    for (;;) dummy();
     return 1;
 }

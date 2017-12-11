@@ -3,7 +3,7 @@
 #include <stdint.h>
 
 #pragma pack(push, 1)
-typedef struct mzhdr_t {
+typedef struct MZHDR {
     uint16_t e_magic;
     uint16_t e_cblp;
     uint16_t e_cp;
@@ -23,11 +23,11 @@ typedef struct mzhdr_t {
     uint16_t e_oeminfo;
     uint16_t e_res2[10];
     uint32_t e_lfanew;
-} mzhdr_t;
+} MZHDR;
 #pragma pack(pop)
 
 #pragma pack(push, 1)
-typedef struct pehdr_t {
+typedef struct PEHDR {
 	uint32_t pesig;
     uint16_t machine;
     uint16_t sections;
@@ -36,11 +36,11 @@ typedef struct pehdr_t {
     uint32_t num_symbols;
     uint16_t size_ophdr;
     uint16_t characteristics;
-} pehdr_t;
+} PEHDR;
 #pragma pack(pop)
 
 #pragma pack(push, 1)
-typedef struct ophdr_t {
+typedef struct OPHDR {
     uint16_t magic;
     uint8_t  major_linker;
     uint8_t  minor_linker;
@@ -71,11 +71,11 @@ typedef struct ophdr_t {
     uint32_t size_heap_commit;
     uint32_t loader_flags;
     uint32_t num_rvas;
-} ophdr_t;
+} OPHDR;
 #pragma pack(pop)
 
 #pragma pack(push, 1)
-typedef struct pesection_t {
+typedef struct PE_SECTION {
     char Name[8];
     uint32_t virt_size;
     uint32_t virt_address;
@@ -86,11 +86,11 @@ typedef struct pesection_t {
     uint16_t num_relocs;
     uint16_t num_linenumbers;
     uint32_t characteristics;
-} pesection_t;
+} PE_SECTION;
 #pragma pack(pop)
 
 #pragma pack(push, 1)
-typedef struct pedir_t {
+typedef struct PE_DIR {
     uint32_t export_address;
     uint32_t export_size;
     uint32_t import_address;
@@ -123,11 +123,11 @@ typedef struct pedir_t {
     uint32_t clr_size;
     uint32_t reserve_address;
     uint32_t reserve_size;
-} pedir_t;
+} PE_DIR;
 #pragma pack(pop)
 
 #pragma pack(push, 1)
-typedef struct peexport_t {
+typedef struct PE_EXPORT {
     uint32_t characteristics;
     uint32_t timestamp;
     uint16_t major_version;
@@ -139,31 +139,31 @@ typedef struct peexport_t {
     uint32_t ptr_functions;
     uint32_t ptr_names;
     uint32_t ptr_ordinals;
-} peexport_t;
+} PE_EXPORT;
 #pragma pack(pop)
 
 #pragma pack(push, 1)
-typedef struct peimport_t {
+typedef struct PE_IMPORT {
     uint32_t characteristics;
     uint32_t timestamp;
     uint32_t forward_chain;
     uint32_t name;
     uint32_t first_thunk;
-} peimport_t;
+} PE_IMPORT;
 #pragma pack(pop)
 
 #pragma pack(push, 1)
-typedef struct peimportname_t {
+typedef struct PE_IMPORTNAME {
     uint16_t hint;
     char name[1];
-} peimportname_t;
+} PE_IMPORTNAME;
 #pragma pack(pop)
 
 #pragma pack(push, 1)
-typedef struct pereloc_t {
+typedef struct PE_RELOC {
     uint32_t address;
     uint32_t blocksize;
-} pereloc_t;
+} PE_RELOC;
 #pragma pack(pop)
 
 #endif // EXE_H

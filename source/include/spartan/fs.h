@@ -28,6 +28,8 @@ int  rmbin(char *path);
 int  rmdir(char *path);
 int  ffind(char *path, char *buf, int len);
 int  fnext(int inode, char *buf, int len);
+char *fblock(int inode);
+int fsstart(char *ram, int disk);
 
 #pragma pack(pop)
 #endif // FS_H

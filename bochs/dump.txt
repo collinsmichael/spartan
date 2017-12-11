@@ -1,0 +1,4 @@
+writemem "filename" address length
+
+example dump all 256MB to "ram.dump"
+writemem "ram.dump" 0 268435456

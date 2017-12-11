@@ -21,6 +21,12 @@
     <ClCompile Include="..\..\..\source\kernel\kernel\driver.c">
       <Filter>source</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\source\kernel\kernel\pipe.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\kernel\kernel\multiboot.c">
+      <Filter>source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\source\include\spartan\arch.h">
@@ -42,6 +48,15 @@
       <Filter>include\spartan</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\source\include\spartan\vesa.h">
+      <Filter>include\spartan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\include\spartan\pipe.h">
+      <Filter>include\spartan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\include\spartan\limits.h">
+      <Filter>include\spartan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\include\spartan\vesa-def.h">
       <Filter>include\spartan</Filter>
     </ClInclude>
   </ItemGroup>
