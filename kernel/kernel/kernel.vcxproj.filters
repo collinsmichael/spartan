@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{9d49b2d9-3a9d-43d9-9c69-d03784bc29cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\include">
+      <UniqueIdentifier>{471457b2-81aa-4285-baa4-f70fd7f71a3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\kernel">
+      <UniqueIdentifier>{9eed4977-b747-4fba-9133-cf6cafd606cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\include\spartan">
+      <UniqueIdentifier>{0d3b964c-70fa-4491-a6aa-f4fb4e1c337a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\include\posix">
+      <UniqueIdentifier>{61ba9d50-08c9-47cc-b947-237fe5801471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\kernel\arch">
+      <UniqueIdentifier>{5b4b6106-dfca-45f4-ab1f-c214c26aeb78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\kernel\drivers">
+      <UniqueIdentifier>{d282fdf1-a684-4fdf-a9f8-7955f963289d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\include\spartan\arch">
+      <UniqueIdentifier>{02791d34-cb0b-48e0-91e2-2eb8ec5e360f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\include\spartan\drivers">
+      <UniqueIdentifier>{22823a72-4bfd-4c6a-a36c-5d915852e5d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\kernel\kernel.c">
+      <Filter>source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\test.c">
+      <Filter>source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\init.c">
+      <Filter>source\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\arch\idt.c">
+      <Filter>source\kernel\arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\arch\gdt.c">
+      <Filter>source\kernel\arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\arch\tss.c">
+      <Filter>source\kernel\arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\arch\pic.c">
+      <Filter>source\kernel\arch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\kernel\drivers\ps2.c">
+      <Filter>source\kernel\drivers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\include\spartan\boot.h">
+      <Filter>source\include\spartan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\include\posix\stdint.h">
+      <Filter>source\include\posix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\include\spartan\arch\arch.h">
+      <Filter>source\include\spartan\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\include\spartan\arch\pic.h">
+      <Filter>source\include\spartan\arch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\include\spartan\drivers\cga.h">
+      <Filter>source\include\spartan\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\include\spartan\drivers\ps2.h">
+      <Filter>source\include\spartan\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\include\spartan\drivers\vesa.h">
+      <Filter>source\include\spartan\drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\include\spartan\drivers\drivers.h">
+      <Filter>source\include\spartan\drivers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\kernel\arch\arch.asm">
+      <Filter>source\kernel\arch</Filter>
+    </None>
+  </ItemGroup>
+</Project>
