@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{a6a96a3c-db6a-4a55-b586-138bdedd8ac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Compositor">
+      <UniqueIdentifier>{179bf749-c128-4762-9c73-b95a5deb8d64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\DeskView">
+      <UniqueIdentifier>{9ca27630-9e2b-4856-aecd-4f3d73db1bf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\IdleThread">
+      <UniqueIdentifier>{81730b92-eaf2-4e22-b1ea-607c2511f456}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Desktop\Desktop.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Desktop\Compositor\Compositor.c">
+      <Filter>Source\Compositor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Desktop\DeskView\DeskView.c">
+      <Filter>Source\DeskView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Desktop\DeskView\TaskBar.c">
+      <Filter>Source\DeskView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Desktop\DeskView\Caret.c">
+      <Filter>Source\DeskView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Desktop\DeskView\Cursor.c">
+      <Filter>Source\DeskView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Desktop\IdleThread\IdleThread.c">
+      <Filter>Source\IdleThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Desktop\Compositor\TripleBuffer.c">
+      <Filter>Source\Compositor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Desktop\Compositor\Compositor.h">
+      <Filter>Source\Compositor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Desktop\Desktop.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Desktop\DeskView\DeskView.h">
+      <Filter>Source\DeskView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Desktop\DeskView\TaskBar.h">
+      <Filter>Source\DeskView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Desktop\DeskView\Cursor.h">
+      <Filter>Source\DeskView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Desktop\IdleThread\IdleThread.h">
+      <Filter>Source\IdleThread</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

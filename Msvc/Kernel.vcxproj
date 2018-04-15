@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Optimized|Win32">
+      <Configuration>Optimized</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Kernel\BootLoad\BootLoad.h" />
+    <ClInclude Include="..\Source\Kernel\BootLoad\Intel\Fpu.h" />
+    <ClInclude Include="..\Source\Kernel\BootLoad\Intel\Intel.h" />
+    <ClInclude Include="..\Source\Kernel\BootLoad\Intel\Pic.h" />
+    <ClInclude Include="..\Source\Kernel\BootLoad\Intel\Tss.h" />
+    <ClInclude Include="..\Source\Kernel\BootLoad\MultiBoot\MultiBoot.h" />
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Cga.h" />
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Cmos.h" />
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Com.h" />
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\PcBios.h" />
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Pit.h" />
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Ps2.h" />
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Rtc.h" />
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Vga.h" />
+    <ClInclude Include="..\source\Kernel\Device\Device.h" />
+    <ClInclude Include="..\Source\Kernel\Device\Drivers\RamDisk.h" />
+    <ClInclude Include="..\Source\Kernel\Device\Drivers\Vesa.h" />
+    <ClInclude Include="..\Source\Kernel\Device\FileIO\FileIO.h" />
+    <ClInclude Include="..\Source\Kernel\Device\FileIO\Pipe.h" />
+    <ClInclude Include="..\source\Kernel\Kernel.h" />
+    <ClInclude Include="..\Source\Kernel\Memory\Heap\Memory.h" />
+    <ClInclude Include="..\Source\Kernel\Memory\Heap\Pool.h" />
+    <ClInclude Include="..\Source\Kernel\Memory\Paging\Paging.h" />
+    <ClInclude Include="..\Source\Kernel\Monitor\Logger.h" />
+    <ClInclude Include="..\Source\Kernel\Monitor\MemMap.h" />
+    <ClInclude Include="..\source\Kernel\Monitor\Monitor.h" />
+    <ClInclude Include="..\source\Kernel\Monitor\SysCall.h" />
+    <ClInclude Include="..\Source\Kernel\Thread\Exception\Exception.h" />
+    <ClInclude Include="..\Source\Kernel\Thread\Loader\Exe.h" />
+    <ClInclude Include="..\Source\Kernel\Thread\Loader\ExeLoader.h" />
+    <ClInclude Include="..\Source\Kernel\Thread\Process\Process.h" />
+    <ClInclude Include="..\Source\Kernel\Thread\Process\Thread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Kernel\BootLoad\BootLoad.c" />
+    <ClCompile Include="..\Source\Kernel\BootLoad\BootStrap.c" />
+    <ClCompile Include="..\Source\Kernel\BootLoad\Intel\Fpu.c" />
+    <ClCompile Include="..\Source\Kernel\BootLoad\Intel\Gdt.c" />
+    <ClCompile Include="..\Source\Kernel\BootLoad\Intel\Idt.c" />
+    <ClCompile Include="..\Source\Kernel\BootLoad\Intel\Pic.c" />
+    <ClCompile Include="..\Source\Kernel\BootLoad\Intel\Tss.c" />
+    <ClCompile Include="..\Source\Kernel\BootLoad\MultiBoot\MultiBoot.c" />
+    <ClCompile Include="..\Source\Kernel\BootLoad\PcBios\PcBios.c" />
+    <ClCompile Include="..\Source\Kernel\BootLoad\PcBios\Ps2.c" />
+    <ClCompile Include="..\source\Kernel\Device\Device.c" />
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\Clock.c" />
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\KeyBoard.c" />
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\Mouse.c" />
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\RamDisk.c" />
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\Serial.c" />
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\Speaker.c" />
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\Vesa.c" />
+    <ClCompile Include="..\Source\Kernel\Device\FileIO\FileIO.c" />
+    <ClCompile Include="..\Source\Kernel\Device\FileIO\Pipe.c" />
+    <ClCompile Include="..\source\Kernel\Kernel.c" />
+    <ClCompile Include="..\Source\Kernel\Memory\Heap\NextFit.c" />
+    <ClCompile Include="..\Source\Kernel\Memory\Heap\Pool.c" />
+    <ClCompile Include="..\Source\Kernel\Memory\Paging\ClockPaging.c" />
+    <ClCompile Include="..\Source\Kernel\Memory\Paging\LazyLoading.c" />
+    <ClCompile Include="..\Source\Kernel\Memory\Paging\Paging.c" />
+    <ClCompile Include="..\Source\Kernel\Monitor\Logger.c" />
+    <ClCompile Include="..\source\Kernel\Monitor\Monitor.c" />
+    <ClCompile Include="..\source\Kernel\Monitor\SysCall.c" />
+    <ClCompile Include="..\Source\Kernel\Thread\Exception\Exception.c" />
+    <ClCompile Include="..\Source\Kernel\Thread\Loader\ExeLoader.c" />
+    <ClCompile Include="..\Source\Kernel\Thread\Process\Environment.c" />
+    <ClCompile Include="..\Source\Kernel\Thread\Process\Process.c" />
+    <ClCompile Include="..\Source\Kernel\Thread\Process\Thread.c" />
+    <ClCompile Include="..\Source\Kernel\Thread\Scheduler\JumpToRing3.c" />
+    <ClCompile Include="..\Source\Kernel\Thread\Scheduler\RoundRobin.c" />
+    <ClCompile Include="..\Source\Kernel\Thread\Scheduler\Scheduler.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Source\Kernel\BootLoad\Intel\Fpu.asm" />
+    <None Include="..\Source\Kernel\BootLoad\Intel\Intel.asm" />
+    <None Include="..\Source\Kernel\BootLoad\Intel\Isr.asm" />
+    <None Include="..\Source\Kernel\BootLoad\MultiBoot\bios.asm" />
+    <None Include="..\Source\Kernel\BootLoad\MultiBoot\boot.asm" />
+    <None Include="..\Source\Kernel\BootLoad\PcBios\PcBios.asm" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EAA7872E-AB0B-45DA-AC93-74B3A2915373}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Kernel</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)binary\</OutDir>
+    <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)Source\;$(SolutionDir)Source\Library\;$(SolutionDir)Source\Kernel\;$(SolutionDir)Source\Shell\;$(SolutionDir)Source\Desktop\;$(SolutionDir)Source\Applications\;$(SolutionDir)Source\UnitTest\; </IncludePath>
+    <ReferencePath />
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)object\;</LibraryPath>
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)binary\</OutDir>
+    <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)Source\;$(SolutionDir)Source\Library\;$(SolutionDir)Source\Kernel\;$(SolutionDir)Source\Shell\;$(SolutionDir)Source\Desktop\;$(SolutionDir)Source\Applications\;$(SolutionDir)Source\UnitTest\; </IncludePath>
+    <ReferencePath />
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)object\;</LibraryPath>
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)binary\</OutDir>
+    <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)Source\;$(SolutionDir)Source\Library\;$(SolutionDir)Source\Kernel\;$(SolutionDir)Source\Shell\;$(SolutionDir)Source\Desktop\;$(SolutionDir)Source\Applications\;$(SolutionDir)Source\UnitTest\; </IncludePath>
+    <ReferencePath />
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)object\;</LibraryPath>
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source\;$(SolutionDir)Source\Library\;$(SolutionDir)Source\Kernel\;$(SolutionDir)Source\Shell\;$(SolutionDir)Source\Desktop\;$(SolutionDir)Source\Applications\;$(SolutionDir)Source\UnitTest\; </AdditionalIncludeDirectories>
+      <UndefineAllPreprocessorDefinitions>true</UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Intel.obj; Fpu.obj; Library.lib; UnitTest.lib;</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ManifestFile />
+      <EntryPointSymbol>start</EntryPointSymbol>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalOptions>/STUB:$(SolutionDir)object\stub.mz
+/IGNORE:4060
+/IGNORE:4086
+/IGNORE:4108
+/FILEALIGN:32
+/ALIGN:32
+ %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source\;$(SolutionDir)Source\Library\;$(SolutionDir)Source\Kernel\;$(SolutionDir)Source\Shell\;$(SolutionDir)Source\Desktop\;$(SolutionDir)Source\Applications\;$(SolutionDir)Source\UnitTest\; </AdditionalIncludeDirectories>
+      <UndefineAllPreprocessorDefinitions>true</UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <ProgramDataBaseFileName />
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/Oi- %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Intel.obj; Fpu.obj; Library.lib; UnitTest.lib;</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ManifestFile />
+      <EntryPointSymbol>start</EntryPointSymbol>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ProgramDatabaseFile />
+      <AdditionalOptions>/STUB:$(SolutionDir)object\stub.mz
+/IGNORE:4060
+/IGNORE:4086
+/IGNORE:4108
+/FILEALIGN:32
+/ALIGN:32
+ %(AdditionalOptions)</AdditionalOptions>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>OPTIMIZED</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source\;$(SolutionDir)Source\Library\;$(SolutionDir)Source\Kernel\;$(SolutionDir)Source\Shell\;$(SolutionDir)Source\Desktop\;$(SolutionDir)Source\Applications\;$(SolutionDir)Source\UnitTest\; </AdditionalIncludeDirectories>
+      <UndefineAllPreprocessorDefinitions>true</UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/Oi- %(AdditionalOptions)</AdditionalOptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <AssemblerOutput>AssemblyAndSourceCode</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Intel.obj; Fpu.obj; Library.lib; UnitTest.lib;</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ManifestFile>
+      </ManifestFile>
+      <EntryPointSymbol>start</EntryPointSymbol>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <AdditionalOptions>/STUB:$(SolutionDir)object\stub.mz
+/IGNORE:4060
+/IGNORE:4086
+/IGNORE:4108
+/FILEALIGN:32
+/ALIGN:32
+ %(AdditionalOptions)</AdditionalOptions>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

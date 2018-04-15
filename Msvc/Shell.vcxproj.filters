@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{a6a96a3c-db6a-4a55-b586-138bdedd8ac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Window">
+      <UniqueIdentifier>{d41c5b0e-4079-4049-a93f-facaea78313b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Bash">
+      <UniqueIdentifier>{87a6f631-91b2-401a-9313-e1e8156a7d64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Window\Events">
+      <UniqueIdentifier>{db95ce41-5700-45a4-8bf7-66e70a311dce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Window\Widget">
+      <UniqueIdentifier>{969f5478-9a3e-4cce-b14e-1465d5b920db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Window\Widget\ListView">
+      <UniqueIdentifier>{d3f8fc72-7d3b-4fa8-a8bf-fc0c85b24a84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Window\Widget\TabBar">
+      <UniqueIdentifier>{333f2376-f375-43c7-bb0a-eb5e2ad3d542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\RunTime">
+      <UniqueIdentifier>{304a4fff-0069-40ff-891d-e49b904b7cd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\RunTime\Graphics">
+      <UniqueIdentifier>{883fc1bf-887f-4f34-8110-f2fe8d0e1584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Bash\Interpreter">
+      <UniqueIdentifier>{8f8d24e4-70d9-4fbf-9b81-abe4fbf6666e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Bash\Pipeline">
+      <UniqueIdentifier>{88057641-8494-4d53-bb5f-f13f36630953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Window\Widget\ScrollBar">
+      <UniqueIdentifier>{af2a9d71-c107-455f-81a8-18978c625b17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Window\Widget\TextBox">
+      <UniqueIdentifier>{3aee37c6-a761-4e26-8509-700c6fca1b14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Window\Widget\NoteBox">
+      <UniqueIdentifier>{6dfdb440-02f7-400b-97ff-d9a71a0f9cf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\RunTime\Network">
+      <UniqueIdentifier>{7d301a14-649f-4341-bbdd-673564be98e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Shell\Shell.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Shell\Window\Events\Events.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\DefaultProc.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnMove.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnSize.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnQuit.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnShow.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnAction.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnDraw.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnHide.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnLoad.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnClick.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnDrag.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnDrop.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnEnter.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnFocus.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnFocusLost.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnHover.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnKeyDown.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnKeyUp.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnLeave.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnMouse.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnRelease.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnTimer.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Events\OnWheel.c">
+      <Filter>Source\Window\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\Frame.c">
+      <Filter>Source\Window\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\Button.c">
+      <Filter>Source\Window\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\Widget.c">
+      <Filter>Source\Window\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\Caret.c">
+      <Filter>Source\Window\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\Console.c">
+      <Filter>Source\Window\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\ListView\ListDraw.c">
+      <Filter>Source\Window\Widget\ListView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\ListView\ListItem.c">
+      <Filter>Source\Window\Widget\ListView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\ListView\ListView.c">
+      <Filter>Source\Window\Widget\ListView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Window.c">
+      <Filter>Source\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\TabBar\TabBar.c">
+      <Filter>Source\Window\Widget\TabBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\TabBar\TabItem.c">
+      <Filter>Source\Window\Widget\TabBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\Panel.c">
+      <Filter>Source\Window\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\Progress.c">
+      <Filter>Source\Window\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\Slider.c">
+      <Filter>Source\Window\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\RunTime\Graphics\Bitmap.c">
+      <Filter>Source\RunTime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\RunTime\Graphics\Canvas.c">
+      <Filter>Source\RunTime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\RunTime\Graphics\Font.c">
+      <Filter>Source\RunTime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\RunTime\Graphics\Graphics.c">
+      <Filter>Source\RunTime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\RunTime\Graphics\Render.c">
+      <Filter>Source\RunTime\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\RunTime\Crt0.c">
+      <Filter>Source\RunTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Bash\Interpreter\Parser.c">
+      <Filter>Source\Bash\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Bash\Interpreter\Lexer.c">
+      <Filter>Source\Bash\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Bash\Interpreter\Interpreter.c">
+      <Filter>Source\Bash\Interpreter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Bash\Pipeline\Redirect.c">
+      <Filter>Source\Bash\Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\ScrollBar\Scroll.c">
+      <Filter>Source\Window\Widget\ScrollBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\ScrollBar\ScrollDraw.c">
+      <Filter>Source\Window\Widget\ScrollBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\ScrollBar\IScroll.c">
+      <Filter>Source\Window\Widget\ScrollBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\TextBox\TextBox.c">
+      <Filter>Source\Window\Widget\TextBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\TextBox\TextBoxCaret.c">
+      <Filter>Source\Window\Widget\TextBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\TextBox\TextBoxDraw.c">
+      <Filter>Source\Window\Widget\TextBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\NoteBox\NoteBox.c">
+      <Filter>Source\Window\Widget\NoteBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\NoteBox\NoteBoxCaret.c">
+      <Filter>Source\Window\Widget\NoteBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\Window\Widget\NoteBox\INoteBox.c">
+      <Filter>Source\Window\Widget\NoteBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\RunTime\Network\Network.c">
+      <Filter>Source\RunTime\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Shell\RunTime\DeathProc.c">
+      <Filter>Source\RunTime</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\Shell\Shell.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Shell\Window\Events\Events.h">
+      <Filter>Source\Window\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shell\Window\Widget\Widget.h">
+      <Filter>Source\Window\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shell\Window\Widget\Caret.h">
+      <Filter>Source\Window\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shell\Window\Window.h">
+      <Filter>Source\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shell\RunTime\Graphics\Area.h">
+      <Filter>Source\RunTime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shell\RunTime\Graphics\Bitmap.h">
+      <Filter>Source\RunTime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shell\RunTime\Graphics\Canvas.h">
+      <Filter>Source\RunTime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shell\RunTime\Graphics\Font.h">
+      <Filter>Source\RunTime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shell\RunTime\Graphics\Graphics.h">
+      <Filter>Source\RunTime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shell\RunTime\Graphics\Render.h">
+      <Filter>Source\RunTime\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shell\Bash\Interpreter\Interpreter.h">
+      <Filter>Source\Bash\Interpreter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Shell\RunTime\Network\Network.h">
+      <Filter>Source\RunTime\Network</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

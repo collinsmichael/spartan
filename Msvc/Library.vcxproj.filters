@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{d13f729d-a131-46e4-98cf-1c087f4f225d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\String">
+      <UniqueIdentifier>{8d6dc2e3-b54b-42fa-b648-79a71b4dd61f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Algorithm">
+      <UniqueIdentifier>{56deee86-6bc5-49c5-86c6-a67ab8d262ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Math">
+      <UniqueIdentifier>{7e593a72-7e53-43be-bead-1ebd15114669}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Library\Algorithm\BinarySearch.c">
+      <Filter>Source\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Library\Algorithm\BubbleSort.c">
+      <Filter>Source\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Library\String\String.c">
+      <Filter>Source\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Library\Math\FixedPoint.c">
+      <Filter>Source\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Library\String\Format.c">
+      <Filter>Source\String</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\Library\Algorithm\BinarySearch.h">
+      <Filter>Source\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Library\Algorithm\BubbleSort.h">
+      <Filter>Source\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Library\Library.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Library\String\String.h">
+      <Filter>Source\String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Library\Algorithm\Algorithm.h">
+      <Filter>Source\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Library\Math\Math.h">
+      <Filter>Source\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Library\oop.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Library\String\Format.h">
+      <Filter>Source\String</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

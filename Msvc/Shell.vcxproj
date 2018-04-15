@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Optimized|Win32">
+      <Configuration>Optimized</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\Shell\Bash\Interpreter\Interpreter.c" />
+    <ClCompile Include="..\Source\Shell\Bash\Interpreter\Lexer.c" />
+    <ClCompile Include="..\Source\Shell\Bash\Interpreter\Parser.c" />
+    <ClCompile Include="..\Source\Shell\Bash\Pipeline\Redirect.c" />
+    <ClCompile Include="..\Source\Shell\RunTime\Crt0.c" />
+    <ClCompile Include="..\Source\Shell\RunTime\DeathProc.c" />
+    <ClCompile Include="..\Source\Shell\RunTime\Graphics\Bitmap.c" />
+    <ClCompile Include="..\Source\Shell\RunTime\Graphics\Canvas.c" />
+    <ClCompile Include="..\Source\Shell\RunTime\Graphics\Font.c" />
+    <ClCompile Include="..\Source\Shell\RunTime\Graphics\Graphics.c" />
+    <ClCompile Include="..\Source\Shell\RunTime\Graphics\Render.c" />
+    <ClCompile Include="..\Source\Shell\RunTime\Network\Network.c" />
+    <ClCompile Include="..\source\Shell\Shell.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\DefaultProc.c" />
+    <ClCompile Include="..\source\Shell\Window\Events\Events.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnAction.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnClick.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnDrag.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnDraw.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnDrop.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnEnter.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnFocus.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnFocusLost.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnHide.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnHover.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnKeyDown.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnKeyUp.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnLeave.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnLoad.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnMouse.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnQuit.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnRelease.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnShow.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnMove.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnSize.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnTimer.c" />
+    <ClCompile Include="..\Source\Shell\Window\Events\OnWheel.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\Button.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\Caret.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\Console.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\Frame.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\ListView\ListDraw.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\ListView\ListItem.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\ListView\ListView.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\NoteBox\INoteBox.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\NoteBox\NoteBox.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\NoteBox\NoteBoxCaret.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\Panel.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\Progress.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\ScrollBar\IScroll.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\ScrollBar\Scroll.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\ScrollBar\ScrollDraw.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\Slider.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\TabBar\TabBar.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\TabBar\TabItem.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\TextBox\TextBox.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\TextBox\TextBoxCaret.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\TextBox\TextBoxDraw.c" />
+    <ClCompile Include="..\Source\Shell\Window\Widget\Widget.c" />
+    <ClCompile Include="..\Source\Shell\Window\Window.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Shell\Bash\Interpreter\Interpreter.h" />
+    <ClInclude Include="..\Source\Shell\RunTime\Graphics\Area.h" />
+    <ClInclude Include="..\Source\Shell\RunTime\Graphics\Bitmap.h" />
+    <ClInclude Include="..\Source\Shell\RunTime\Graphics\Canvas.h" />
+    <ClInclude Include="..\Source\Shell\RunTime\Graphics\Font.h" />
+    <ClInclude Include="..\Source\Shell\RunTime\Graphics\Graphics.h" />
+    <ClInclude Include="..\Source\Shell\RunTime\Graphics\Render.h" />
+    <ClInclude Include="..\Source\Shell\RunTime\Network\Network.h" />
+    <ClInclude Include="..\source\Shell\Shell.h" />
+    <ClInclude Include="..\source\Shell\Window\Events\Events.h" />
+    <ClInclude Include="..\Source\Shell\Window\Widget\Caret.h" />
+    <ClInclude Include="..\Source\Shell\Window\Widget\Widget.h" />
+    <ClInclude Include="..\Source\Shell\Window\Window.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ACFB0567-ED05-4372-8A94-5CED7041C0A7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Shell</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)binary\</OutDir>
+    <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)Source\;$(SolutionDir)Source\Library\;$(SolutionDir)Source\Kernel\;$(SolutionDir)Source\Shell\;$(SolutionDir)Source\Desktop\;$(SolutionDir)Source\Applications\; </IncludePath>
+    <ReferencePath />
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)object\;</LibraryPath>
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)binary\</OutDir>
+    <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)Source\;$(SolutionDir)Source\Library\;$(SolutionDir)Source\Kernel\;$(SolutionDir)Source\Shell\;$(SolutionDir)Source\Desktop\;$(SolutionDir)Source\Applications\; </IncludePath>
+    <ReferencePath />
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)object\;</LibraryPath>
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)binary\</OutDir>
+    <IntDir>$(SolutionDir)object\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)Source\;$(SolutionDir)Source\Library\;$(SolutionDir)Source\Kernel\;$(SolutionDir)Source\Shell\;$(SolutionDir)Source\Desktop\;$(SolutionDir)Source\Applications\; </IncludePath>
+    <ReferencePath />
+    <LibraryPath>$(SolutionDir)binary\;$(SolutionDir)object\;</LibraryPath>
+    <LibraryWPath />
+    <SourcePath />
+    <ExcludePath />
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source\;$(SolutionDir)Source\Library\;$(SolutionDir)Source\Kernel\;$(SolutionDir)Source\Shell\;$(SolutionDir)Source\Desktop\;$(SolutionDir)Source\Applications\; </AdditionalIncludeDirectories>
+      <UndefineAllPreprocessorDefinitions>true</UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Intel.obj; Library.lib; Kernel.lib;</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ManifestFile />
+      <EntryPointSymbol>start</EntryPointSymbol>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <NoEntryPoint>false</NoEntryPoint>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source\;$(SolutionDir)Source\Library\;$(SolutionDir)Source\Kernel\;$(SolutionDir)Source\Shell\;$(SolutionDir)Source\Desktop\;$(SolutionDir)Source\Applications\; </AdditionalIncludeDirectories>
+      <UndefineAllPreprocessorDefinitions>true</UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <ProgramDataBaseFileName />
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/Oi- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Intel.obj; Library.lib; Kernel.lib;</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ManifestFile />
+      <EntryPointSymbol>start</EntryPointSymbol>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ProgramDatabaseFile />
+      <AdditionalOptions>/STUB:$(SolutionDir)object\stub.mz
+/IGNORE:4060
+/IGNORE:4086
+/IGNORE:4108
+/ALIGN:64
+/FILEALIGN:64
+ %(AdditionalOptions)</AdditionalOptions>
+      <NoEntryPoint>false</NoEntryPoint>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>OPTIMIZED</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source\;$(SolutionDir)Source\Library\;$(SolutionDir)Source\Kernel\;$(SolutionDir)Source\Shell\;$(SolutionDir)Source\Desktop\;$(SolutionDir)Source\Applications\; </AdditionalIncludeDirectories>
+      <UndefineAllPreprocessorDefinitions>true</UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <AdditionalOptions>/Oi- %(AdditionalOptions)</AdditionalOptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Intel.obj; Library.lib; Kernel.lib;</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
+      <ManifestFile>
+      </ManifestFile>
+      <EntryPointSymbol>start</EntryPointSymbol>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <AdditionalOptions>/STUB:$(SolutionDir)object\stub.mz
+/IGNORE:4060
+/IGNORE:4086
+/IGNORE:4108
+/ALIGN:64
+/FILEALIGN:64
+ %(AdditionalOptions)</AdditionalOptions>
+      <NoEntryPoint>false</NoEntryPoint>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

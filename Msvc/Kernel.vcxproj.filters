@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\source\Kernel\Kernel.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Kernel\Monitor\Monitor.h">
+      <Filter>Source\Monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Kernel\Monitor\SysCall.h">
+      <Filter>Source\Monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\Kernel\Device\Device.h">
+      <Filter>Source\Device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\BootLoad.h">
+      <Filter>Source\BootLoad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\Intel\Fpu.h">
+      <Filter>Source\BootLoad\Intel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\Intel\Intel.h">
+      <Filter>Source\BootLoad\Intel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\Intel\Pic.h">
+      <Filter>Source\BootLoad\Intel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\Intel\Tss.h">
+      <Filter>Source\BootLoad\Intel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\MultiBoot\MultiBoot.h">
+      <Filter>Source\BootLoad\MultiBoot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Cga.h">
+      <Filter>Source\BootLoad\PcBios</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Com.h">
+      <Filter>Source\BootLoad\PcBios</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\PcBios.h">
+      <Filter>Source\BootLoad\PcBios</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Ps2.h">
+      <Filter>Source\BootLoad\PcBios</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Rtc.h">
+      <Filter>Source\BootLoad\PcBios</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Monitor\MemMap.h">
+      <Filter>Source\Monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Memory\Heap\Pool.h">
+      <Filter>Source\Memory\Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Memory\Paging\Paging.h">
+      <Filter>Source\Memory\Paging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Thread\Process\Thread.h">
+      <Filter>Source\Thread\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Device\FileIO\FileIO.h">
+      <Filter>Source\Device\FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Device\FileIO\Pipe.h">
+      <Filter>Source\Device\FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Device\Drivers\RamDisk.h">
+      <Filter>Source\Device\Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Device\Drivers\Vesa.h">
+      <Filter>Source\Device\Drivers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Memory\Heap\Memory.h">
+      <Filter>Source\Memory\Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Pit.h">
+      <Filter>Source\BootLoad\PcBios</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Thread\Loader\ExeLoader.h">
+      <Filter>Source\Thread\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Thread\Process\Process.h">
+      <Filter>Source\Thread\Process</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Cmos.h">
+      <Filter>Source\BootLoad\PcBios</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Monitor\Logger.h">
+      <Filter>Source\Monitor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Thread\Loader\Exe.h">
+      <Filter>Source\Thread\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\BootLoad\PcBios\Vga.h">
+      <Filter>Source\BootLoad\PcBios</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Kernel\Thread\Exception\Exception.h">
+      <Filter>Source\Thread\Exception</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\Kernel\Kernel.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Kernel\Monitor\Monitor.c">
+      <Filter>Source\Monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Kernel\Monitor\SysCall.c">
+      <Filter>Source\Monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\Kernel\Device\Device.c">
+      <Filter>Source\Device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Monitor\Logger.c">
+      <Filter>Source\Monitor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\BootLoad\BootLoad.c">
+      <Filter>Source\BootLoad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\BootLoad\Intel\Fpu.c">
+      <Filter>Source\BootLoad\Intel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\BootLoad\Intel\Gdt.c">
+      <Filter>Source\BootLoad\Intel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\BootLoad\Intel\Idt.c">
+      <Filter>Source\BootLoad\Intel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\BootLoad\Intel\Pic.c">
+      <Filter>Source\BootLoad\Intel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\BootLoad\Intel\Tss.c">
+      <Filter>Source\BootLoad\Intel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\BootLoad\MultiBoot\MultiBoot.c">
+      <Filter>Source\BootLoad\MultiBoot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\BootLoad\PcBios\PcBios.c">
+      <Filter>Source\BootLoad\PcBios</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\BootLoad\PcBios\Ps2.c">
+      <Filter>Source\BootLoad\PcBios</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\BootLoad\BootStrap.c">
+      <Filter>Source\BootLoad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Memory\Heap\NextFit.c">
+      <Filter>Source\Memory\Heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Memory\Heap\Pool.c">
+      <Filter>Source\Memory\Heap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Memory\Paging\Paging.c">
+      <Filter>Source\Memory\Paging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Thread\Scheduler\JumpToRing3.c">
+      <Filter>Source\Thread\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Thread\Scheduler\RoundRobin.c">
+      <Filter>Source\Thread\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Thread\Scheduler\Scheduler.c">
+      <Filter>Source\Thread\Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Thread\Process\Thread.c">
+      <Filter>Source\Thread\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Device\FileIO\FileIO.c">
+      <Filter>Source\Device\FileIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Device\FileIO\Pipe.c">
+      <Filter>Source\Device\FileIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\RamDisk.c">
+      <Filter>Source\Device\Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\Clock.c">
+      <Filter>Source\Device\Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\KeyBoard.c">
+      <Filter>Source\Device\Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\Mouse.c">
+      <Filter>Source\Device\Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\Serial.c">
+      <Filter>Source\Device\Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\Speaker.c">
+      <Filter>Source\Device\Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Device\Drivers\Vesa.c">
+      <Filter>Source\Device\Drivers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Thread\Loader\ExeLoader.c">
+      <Filter>Source\Thread\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Thread\Process\Process.c">
+      <Filter>Source\Thread\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Thread\Process\Environment.c">
+      <Filter>Source\Thread\Process</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Memory\Paging\LazyLoading.c">
+      <Filter>Source\Memory\Paging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Memory\Paging\ClockPaging.c">
+      <Filter>Source\Memory\Paging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Kernel\Thread\Exception\Exception.c">
+      <Filter>Source\Thread\Exception</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{529b202a-b34d-4e10-afae-3818fb2eff1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Thread">
+      <UniqueIdentifier>{9dd8103f-115d-4208-b794-b112502612fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Memory">
+      <UniqueIdentifier>{a6fa1ec2-e9a5-4385-9d55-812e8a26fa72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Device">
+      <UniqueIdentifier>{0ae821a1-d089-43fd-935c-21d527dc3fcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Monitor">
+      <UniqueIdentifier>{75b79fcc-4d64-4720-8069-e1ada5100b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BootLoad">
+      <UniqueIdentifier>{7d2c32c5-063d-4454-915c-73e3dd3cedf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BootLoad\Intel">
+      <UniqueIdentifier>{65f07210-4656-41fb-8f6e-adb173a7a243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BootLoad\MultiBoot">
+      <UniqueIdentifier>{2286d61e-0845-4a4b-948e-17827f5d39f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BootLoad\PcBios">
+      <UniqueIdentifier>{2f0d8c43-7561-43cc-86c6-f5f72de166d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Thread\Scheduler">
+      <UniqueIdentifier>{dc917bd8-0b58-46c6-af3f-121ce14c144c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Thread\Process">
+      <UniqueIdentifier>{4c892fbc-46a5-428d-82d7-27a4c67b4b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Memory\Heap">
+      <UniqueIdentifier>{dbe21b35-d195-4d53-af16-fcb99c6ed6b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Memory\Paging">
+      <UniqueIdentifier>{b5b86ea1-7c14-4557-ad70-f56b61d6d699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Device\Drivers">
+      <UniqueIdentifier>{2ba57aa0-8855-4bd5-b52b-57d5819099fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Device\FileIO">
+      <UniqueIdentifier>{cd909411-9b9a-4341-819a-601a641e4985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Thread\Loader">
+      <UniqueIdentifier>{0ab3a2c9-efa8-480a-8655-a4de7c5cb8c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Thread\Exception">
+      <UniqueIdentifier>{7ddad872-b1c6-40a2-b312-1fd5390c542a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Source\Kernel\BootLoad\Intel\Fpu.asm">
+      <Filter>Source\BootLoad\Intel</Filter>
+    </None>
+    <None Include="..\Source\Kernel\BootLoad\Intel\Intel.asm">
+      <Filter>Source\BootLoad\Intel</Filter>
+    </None>
+    <None Include="..\Source\Kernel\BootLoad\Intel\Isr.asm">
+      <Filter>Source\BootLoad\Intel</Filter>
+    </None>
+    <None Include="..\Source\Kernel\BootLoad\MultiBoot\bios.asm">
+      <Filter>Source\BootLoad\MultiBoot</Filter>
+    </None>
+    <None Include="..\Source\Kernel\BootLoad\MultiBoot\boot.asm">
+      <Filter>Source\BootLoad\MultiBoot</Filter>
+    </None>
+    <None Include="..\Source\Kernel\BootLoad\PcBios\PcBios.asm">
+      <Filter>Source\BootLoad\PcBios</Filter>
+    </None>
+  </ItemGroup>
+</Project>

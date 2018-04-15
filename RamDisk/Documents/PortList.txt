@@ -1,0 +1,49 @@
+Port Address    Device Description
+0x000 - 0x01F   First DMA controller (8237A-5 floppy disk drives).
+0x020 - 0x03F   First Programmable Interrupt Controller (PIC) (8259A Master PIC.)
+0x040 - 0x05F   Programmable Interval Timer (Commonly 8254 chip.)
+0x060 - 0x06F   PS/2 Keyboard (Always 8042 chip)
+0x070 - 0x07F   Real Time Clock, NMI mask
+0x080 - 0x09F   DMA Page Registers (Commonly 74LS612 chip)
+0x0A0 - 0x0BF   Second Programmable Interrupt Controller (PIC) (8259A Slave PIC.)
+0x0C0 - 0x0DF   Second DMA controller (Commonly 8237 A-5 chip
+0x0E9           Often used for the Port 0xE9 Hack.
+0x0F0           Math coprocessor (usually 80287) : Clear Busy
+0x0F1           Math coprocessor (usually 80287) : Reset
+0x0F8 - 0x0FF   Math coprocessor (usually 80287)
+0x0F0 - 0x0F5   PCjr Disk Controller
+0x0F8 - 0x0FF   Reserved for future microprocessor extensions
+0x100 - 0x10F   Programmable Option Select (POS) (Used by PS/2)
+0x110 - 0x1EF   System I/O channel
+0x140 - 0x15F   Secondary SCSI host adapter
+0x170 - 0x177   Secondary PATA Disk Controller (CD/DVD drives or backup HDD.)
+0x1F0 - 0x1F7   Primary PATA Disk Controller (a primary HDD / boot drive)
+0x200 - 0x20F   Game port
+0x210 - 0x217   Expansion Unit
+0x220 - 0x233   Sound Blaster and most other sound cards
+0x278 - 0x27F   Parallel port 3
+0x280 - 0x29F   LCD on Wyse 2108 PC SMC Elite default factory setting
+0x2B0 - 0x2DF   Alternate Enhanced Graphics Adapter (EGA) display control
+0x2E8 - 0x2EF   Serial port 4 (if available, often COM 4)
+0x2E1           GPIB/IEEE-488 Adapter 0
+0x2E2 - 0x2E3   Data acquisition
+0x2F8 - 0x2FF   Serial port 2 (if available, often COM 2)
+0x300 - 0x31F   Prototype Card
+0x300 - 0x31F   Novell NE1000 compatible Ethernet network interfaces
+0x300 - 0x31F   AMD Am7990 Ethernet network interface, IRQ=5.
+0x320 - 0x323   ST-506 and compatible hard disk drive interface
+0x330 - 0x331   MPU-401 MIDI Processing Unit on most sound cards
+0x340 - 0x35F   Primary SCSI host adapter
+0x370 - 0x377   Secondary floppy disk drive controller
+0x378 - 0x37F   Parallel port 2
+0x380 - 0x38C   Secondary Binary Synchronous Data Link Control (SDLC) adapter
+0x388 - 0x389   AdLib Music Synthesizer Card
+0x3A0 - 0x3A9   Primary Binary Synchronous Data Link Control (SDLC) adapter
+0x3B0 - 0x3BB   Monochrome Display Adapter (MDA) display. IBM VGA, CGA
+0x3BC - 0x3BF   Parallel port 1 on MDA card. IBM VGA, CGA
+0x3C0 - 0x3CF   Enhanced Graphics Adapter (EGA) display. IBM VGA, CGA
+0x3D0 - 0x3DF   Color Graphics Adapter (CGA). IBM VGA and direct predecessors
+0x3E8 - 0x3EF   Serial port 3 (if available, often COM 3)
+0x3F0 - 0x3F7   Primary FDD controller. Primary IDE controller (slave drive) (3F6–3F7h)
+0x3F8 - 0x3FF   Serial port 1 (if available, often COM1 )
+0xCF8 – 0xCFC   PCI configuration space
