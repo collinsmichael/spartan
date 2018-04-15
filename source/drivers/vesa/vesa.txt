@@ -1,9 +1,0 @@
-
- VESA BIOS EXTENSIONS (VBE) driver for the Spartan OS
-
- The VESA standard provides high resolution video modes which are
- implemented as memory mapped pixel buffers. This is convenient for
- an operating system.
-
- This driver privides access to the video frame buffer through a pipe
- which is copied to video memory during the vertical blanking period.
