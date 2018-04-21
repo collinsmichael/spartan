@@ -189,10 +189,10 @@ static bool ICaret_Print(CWindow *window, char *format, ...) {
     if (!window || !format) return false;
 
     char text[1024];
-	va_list *list;
+    va_list *list;
     va_start(list, format);
-	VaFormat(text, format, list);
-	va_end(list);
+    VaFormat(text, format, list);
+    va_end(list);
 
     for (int i = 0; i < elementsof(text) && text[i]; i++) {
         ICaret_PutC(window, text[i]);
@@ -204,10 +204,10 @@ static bool ICaret_TextOut(CWindow *window, int x, int y, char *format, ...) {
     if (!window || !format) return false;
 
     char text[1024];
-	va_list *list;
+    va_list *list;
     va_start(list, format);
-	VaFormat(text, format, list);
-	va_end(list);
+    VaFormat(text, format, list);
+    va_end(list);
 
     CCanvas *canvas = Canvas->GetCanvas();
     CFont *font = window->Font;

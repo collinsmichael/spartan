@@ -103,14 +103,14 @@ static u32 KeyboardIsr(u32 err, u32 esp) {
     keybrd[KEY_CAPSLOCK] = (toggle & PS2_CAPLOCK) ? 1 : 0;
     keybrd[KEY_SCRLLOCK] = (toggle & PS2_SCRLOCK) ? 1 : 0;
 
-	numlock = keybrd[KEY_NUMLOCK ];
-	caplock = keybrd[KEY_CAPSLOCK];
-	scrlock = keybrd[KEY_SCRLLOCK];
-	ctrl    = keybrd[KEY_LCTRL ] | keybrd[KEY_RCTRL ];
-	shift   = keybrd[KEY_LSHIFT] | keybrd[KEY_RSHIFT];
-	alt     = keybrd[KEY_LALT  ] | keybrd[KEY_RALT  ];
-	win     = keybrd[KEY_LWIN  ] | keybrd[KEY_RWIN  ];
-	prnt    = keybrd[KEY_PRINT ];
+    numlock = keybrd[KEY_NUMLOCK ];
+    caplock = keybrd[KEY_CAPSLOCK];
+    scrlock = keybrd[KEY_SCRLLOCK];
+    ctrl    = keybrd[KEY_LCTRL ] | keybrd[KEY_RCTRL ];
+    shift   = keybrd[KEY_LSHIFT] | keybrd[KEY_RSHIFT];
+    alt     = keybrd[KEY_LALT  ] | keybrd[KEY_RALT  ];
+    win     = keybrd[KEY_LWIN  ] | keybrd[KEY_RWIN  ];
+    prnt    = keybrd[KEY_PRINT ];
 
     u8 *keymap = (KEYMAP == 0x01) ? qwerty : dvorak;
     char ascii = keymap[key + shift*128 + numlock*256];

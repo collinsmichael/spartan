@@ -16,8 +16,8 @@ static u8 pic2;
 
 bool RemapPic(void) {
     Logger(" Remapping  PIC  ... OK\n");
-	pic1 = inb(PIC1_DATA);                     // save masks
-	pic2 = inb(PIC2_DATA);                     // save masks
+    pic1 = inb(PIC1_DATA);                     // save masks
+    pic2 = inb(PIC2_DATA);                     // save masks
     outb(PIC1_CMD,  ICW1|ICW1_INIT|ICW1_ICW4); // ICW1_INIT+ICW1_ICW4
     outb(PIC2_CMD,  ICW1|ICW1_INIT|ICW1_ICW4); // ICW1_INIT+ICW1_ICW4
     outb(PIC1_DATA, ICW2|0x20);                // PIC1 vector

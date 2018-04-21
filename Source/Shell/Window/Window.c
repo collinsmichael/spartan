@@ -267,19 +267,19 @@ static bool IWindow_PutC(CWindow *window, char c) {
 
 static bool IWindow_Print(CWindow *window, char *format, ...) {
     char text[1024];
-	va_list *list;
+    va_list *list;
     va_start(list, format);
-	VaFormat(text, format, list);
-	va_end(list);
+    VaFormat(text, format, list);
+    va_end(list);
     return Caret->Print(window, text);
 }
 
 static bool IWindow_TextOut(CWindow *window, int x, int y, char *format, ...) {
     char text[1024];
-	va_list *list;
+    va_list *list;
     va_start(list, format);
-	VaFormat(text, format, list);
-	va_end(list);
+    VaFormat(text, format, list);
+    va_end(list);
     return Caret->TextOut(window, x, y, text);
 }
 

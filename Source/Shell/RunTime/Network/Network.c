@@ -145,12 +145,12 @@ bool INetwork_Send(int port, char *packet, int size) {
 }
 
 bool INetwork_PrintF(int port, char *format, ...) {
-	char text[0x400];
+    char text[0x400];
 
-	va_list *list;
+    va_list *list;
     va_start(list, format);
-	VaFormat(text, format, list);
-	va_end(list);
+    VaFormat(text, format, list);
+    va_end(list);
 
     for (char *c = text; *c; c++) {
         INetwork_Send(port, c, 1);

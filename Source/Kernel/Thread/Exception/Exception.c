@@ -122,10 +122,10 @@ export bool Install_DeathLoop(void *callback) {
 bool DebugContext(char *format, ...) {
     static char text[256];
 
-	va_list *list;
+    va_list *list;
     va_start(list, format);
-	VaFormat(text, format, list);
-	va_end(list);
+    VaFormat(text, format, list);
+    va_end(list);
 
     CTask *TaskPool = (CTask*)MMAP_TASKPOOL;
     int pid = Thread->GetPid();

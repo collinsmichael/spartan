@@ -12,61 +12,61 @@ export bool Install_DeathLoop(void *callback);
 void DeathLoop(char *error);
 
 int CrtArgC(char *text) {
-	int argc = 0;
-	while (*text >= ' ') {
-		char c;
+    int argc = 0;
+    while (*text >= ' ') {
+        char c;
         // skip white space
-		while (*text == ' ') text++;
-		c = *text;
+        while (*text == ' ') text++;
+        c = *text;
 
-		// grab quoted arguments
-		if (c == '"') {
-			text++;
-			argc++;
-			while (*text != c) {
+        // grab quoted arguments
+        if (c == '"') {
+            text++;
+            argc++;
+            while (*text != c) {
                 if (*text++ < ' ') break;
             }
 
-		// grab non quoted arguments
-		} else if (*text > ' ') {
-			argc++;
-			while (*text++ > ' ');
-		}
-	}
-	return argc;
+        // grab non quoted arguments
+        } else if (*text > ' ') {
+            argc++;
+            while (*text++ > ' ');
+        }
+    }
+    return argc;
 }
 
 char **CrtArgV(int argc, char *text) {
-	int arg = 0;
+    int arg = 0;
 
-	char **argv = (char**)Memory->Alloc((argc + 1)*sizeof(char**));
-	if (!argv) return 0;
+    char **argv = (char**)Memory->Alloc((argc + 1)*sizeof(char**));
+    if (!argv) return 0;
 
-	while (*text >= ' ') {
-		char c;
+    while (*text >= ' ') {
+        char c;
 
         // skip white space
-		while (*text == ' ') text++;
+        while (*text == ' ') text++;
 
         // grab quoted arguments
-		c = *text;
-		if (c == '"') {
-			argv[arg++] = ++text;
-			while (*text != c) {
-				if (*text < ' ') break;
-				text++;
-			}
-			*text++ = 0;
+        c = *text;
+        if (c == '"') {
+            argv[arg++] = ++text;
+            while (*text != c) {
+                if (*text < ' ') break;
+                text++;
+            }
+            *text++ = 0;
 
         // grab non quoted arguments
-		} else if (*text > ' ') {
-			argv[arg++] = text;
-			while (*text > ' ') text++;
-			*text++ = 0;
-		}
-	}
-	argv[argc] = "";
-	return argv;
+        } else if (*text > ' ') {
+            argv[arg++] = text;
+            while (*text > ' ') text++;
+            *text++ = 0;
+        }
+    }
+    argv[argc] = "";
+    return argv;
 }
 
 int CrtStart(void) {
