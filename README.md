@@ -9,14 +9,13 @@ Spartan OS uses an in-memory file system (Ram Disk), and has drivers for the PC 
 the Serial Port and the PS/2 keyboard and mouse.
 
 # Size of Code Base
-|-----|-------:|-------:|-------:|-------:|
-|     | KERNEL | SHELL | DESKTOP |  TOTAL |
-|-----|-------:|-------:|-------:|-------:|
-| C   |   3740 |  5860 |     728 |  10328 |
-| H   |   1906 |   651 |      66 |   2623 |
-| ASM |    701 |     0 |       0 |    701 |
-| ANY |   6347 |  6511 |     794 |  13652 |
-|-----|-------:|-------:|-------:|-------:|
+
+| LANG | KERNEL | SHELL | DESKTOP | TOTAL |
+| :--- |   ---: |  ---: |   ---: | ---: |
+| C    |   3740 |  5860 |     728 | 10328 |
+| H    |   1906 |   651 |      66 |  2623 |
+| ASM  |    701 |     0 |       0 |   701 |
+| ANY  |   6347 |  6511 |     794 | 13652 |
 
 # Screenshots  
 ![Alt text](/ScreenShots/Spartan.gif?raw=true "Spartan")
