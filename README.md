@@ -16,8 +16,9 @@ and RamDisk/Media/Video directories were sourced from Wikipedia
 # Size of Code Base
 The following statistics do not include the application source code
 since the applications are for demonstration purposes only.
+
 | LANG | KERNEL | SHELL | DESKTOP | TOTAL |
-| :--- |   ---: |  ---: |    ---: |  ---: |
+| :--- | ---: |  ---: | ---: | ---: |
 | C    |   3740 |  5860 |     728 | 10328 |
 | H    |   1906 |   651 |      66 |  2623 |
 | ASM  |    701 |     0 |       0 |   701 |
