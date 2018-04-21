@@ -8,7 +8,7 @@ a Graphical User Interface with file associations and is designed with usability
 Spartan OS uses an in-memory file system (Ram Disk), and has drivers for the PC Speaker,
 the Serial Port and the PS/2 keyboard and mouse.
 
-This repository contains the software implementation, the research and design documentation.
+This repository contains both the software implementation, and the research and design documentation.
 The iconography included within the RamDisk directory are derivative works with the originals
 sourced from https://icons8.com/ and the imagery contained within the RamDisk/Media/Images
 and RamDisk/Media/Video directories were sourced from Wikipedia
