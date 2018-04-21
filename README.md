@@ -1,4 +1,4 @@
-# spartan
+# Spartan OS
 Spartan OS is an Operating System developed as a Final Year Project for
 the Bachelor of Science (Hons) in Software Development at Limerick Institute of Technology
     http://www.lit.ie/Courses/LC233/default.aspx
