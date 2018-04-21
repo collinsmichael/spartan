@@ -9,13 +9,13 @@
     <ClCompile Include="..\Source\Applications\Gui\Gui.c">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="..\Source\Applications\Gui\ButtonTab.c">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="..\Source\Applications\Gui\ListTab.c">
       <Filter>Source</Filter>
     </ClCompile>
     <ClCompile Include="..\Source\Applications\Gui\TextTab.c">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Applications\Gui\ButtonTab.c">
       <Filter>Source</Filter>
     </ClCompile>
   </ItemGroup>

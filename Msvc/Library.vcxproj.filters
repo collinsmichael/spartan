@@ -15,19 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\source\Library\Algorithm\BinarySearch.c">
-      <Filter>Source\Algorithm</Filter>
-    </ClCompile>
-    <ClCompile Include="..\source\Library\Algorithm\BubbleSort.c">
-      <Filter>Source\Algorithm</Filter>
-    </ClCompile>
-    <ClCompile Include="..\source\Library\String\String.c">
-      <Filter>Source\String</Filter>
-    </ClCompile>
-    <ClCompile Include="..\source\Library\Math\FixedPoint.c">
+    <ClCompile Include="..\Source\Library\Math\FixedPoint.c">
       <Filter>Source\Math</Filter>
     </ClCompile>
+    <ClCompile Include="..\Source\Library\Algorithm\BinarySearch.c">
+      <Filter>Source\Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Library\Algorithm\BubbleSort.c">
+      <Filter>Source\Algorithm</Filter>
+    </ClCompile>
     <ClCompile Include="..\Source\Library\String\Format.c">
+      <Filter>Source\String</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Library\String\String.c">
       <Filter>Source\String</Filter>
     </ClCompile>
   </ItemGroup>

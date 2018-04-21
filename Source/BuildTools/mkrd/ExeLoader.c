@@ -1,3 +1,4 @@
+#include <Library.h>
 #include "ExeLoader.h"
 
 extern IFileIO FileIO;
@@ -42,7 +43,7 @@ int Reloc(char *path, int base, int size) {
     }
 
     ophdr->ImageBase = target;
-    if (strcmp(path, boot) == 0) {
+    if (StrCmp(path, boot) == 0) {
         FileIO.Disk->Entry = ophdr->ImageBase + ophdr->Entry;
     }
     return 1;
@@ -69,8 +70,8 @@ CFile *OpenLib(char *libname, char *mode) {
         "Apps/"
     };
     for (int i = 0; i < elementsof(dir); i++) {
-        strcpy(path, dir[i]);
-        strcat(path, libname);
+        StrCpy(path, dir[i]);
+        StrCat(path, libname);
         CFile *file = FileIO.Open(path, mode);
         if (file) return file;
     }
@@ -107,8 +108,8 @@ int Link(char *path, int base, int size) {
 
         int *thunk = (int*)&binary[imports->FirstThunk];
         while (*thunk) {
-            PEIMPORTNAME *import = (PEIMPORTNAME*)&binary[*thunk];
-            int proc = GetProc(dll, import->Name);
+            PEIMPORTNAME *imports = (PEIMPORTNAME*)&binary[*thunk];
+            int proc = GetProc(dll, imports->Name);
 #ifdef MKRD
             if (!proc) {
                 printf(" mkrd [fail] %s does not contain function %s\n", library, import->Name);

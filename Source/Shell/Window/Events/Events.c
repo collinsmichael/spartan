@@ -56,6 +56,7 @@ bool IEvent_HandleEvent(CEvent *evt) {
 }
 
 bool IEvent_Forward(CWindow *target, CEvent *evt) {
+    //Debug(" Event->Forward(%X, %X)\n", target, evt);
     if (!target|| !evt) return true;
     bool result = true;
     if (target->CallBack) {

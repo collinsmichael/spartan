@@ -1,3 +1,4 @@
+#include <Library.h>
 #include "RamDisk.h"
 
 void stosb(void*,int,int);
@@ -8,12 +9,12 @@ void movsd(void*,void*,int);
 extern char *RAM;
 int counter;
 
-int Format(CDisk *volume, int size, char *VolumeID) {
+int FormatDisk(CDisk *volume, int size, char *VolumeID) {
     if (!volume) return 0;
     char *disk = (char*)volume;
 
     stosd(volume, 0, 256/4);
-    if (strlen(VolumeID) > sizeof(volume->VolumeID)) return 0;
+    if (StrLen(VolumeID) > sizeof(volume->VolumeID)) return 0;
 
     volume->DiskBase  = 0;
     volume->DiskSize  = size;
@@ -94,7 +95,7 @@ static void BubbleSort(char *data, int count, int size, int delta) {
         for (int i = 1; i < count; i++) {
             char *src = &data[i*size + delta];
             char *trg = &data[(i-1)*size + delta];
-            int eq = strcmp(src, trg);
+            int eq = StrCmp(src, trg);
             if (eq < 0) {
                 char *a = &data[i*size];
                 char *b = &data[(i-1)*size];
@@ -110,7 +111,7 @@ int BinarySearch(char *data, int count, int size, int delta, char *key) {
     while (i <= j) {
         int k = (i + j) / 2;
         char *src = &data[k*size + delta];
-        int eq = strcmp(src, key);
+        int eq = StrCmp(src, key);
         if (eq == 0) {
             return k;
         } else if (eq < 0) {
@@ -193,7 +194,7 @@ int Remove(CDisk *disk, char *path) {
 }
 
 struct IRamDisk RamDisk = {
-    Format,
+    FormatDisk,
     Insert,
     Remove,
     Search

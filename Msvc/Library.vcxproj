@@ -15,11 +15,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\source\Library\Algorithm\BinarySearch.c" />
-    <ClCompile Include="..\source\Library\Algorithm\BubbleSort.c" />
-    <ClCompile Include="..\source\Library\Math\FixedPoint.c" />
+    <ClCompile Include="..\Source\Library\Algorithm\BinarySearch.c" />
+    <ClCompile Include="..\Source\Library\Algorithm\BubbleSort.c" />
+    <ClCompile Include="..\Source\Library\Math\FixedPoint.c" />
     <ClCompile Include="..\Source\Library\String\Format.c" />
-    <ClCompile Include="..\source\Library\String\String.c" />
+    <ClCompile Include="..\Source\Library\String\String.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\Library\Algorithm\Algorithm.h" />
@@ -42,19 +42,20 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
-    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Optimized|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
-    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>NotSet</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />

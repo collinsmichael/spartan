@@ -1,7 +1,7 @@
 #include <oop.h>
 #include <Kernel.h>
 
-import IProcess *Process;
+extern IProcess *Process;
 
 void *INextFit_Alloc(CPool *heap, int len) {
     if (!heap || len <= 0) return nullptr;

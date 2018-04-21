@@ -23,6 +23,7 @@ static bool ButtonOnLoad(CWindow *win, CEvent *evt) {
 }
 
 static bool ButtonOnDraw(CWindow *win, CEvent *evt) {
+    //Debug("Button->Draw(%D)\n", win->Visible);
     if (!win->Visible) return true;
 
     CArea area;

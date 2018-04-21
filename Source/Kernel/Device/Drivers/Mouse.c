@@ -31,8 +31,8 @@ bool IMouse_SetSpeed(int speed) {
 
 void ActiveAssist(int adj, int opp) {
     int hyp = pythagoras(adj, opp);
-    int log2  = pow(hyp,2);
-    int log10 = pow(hyp,10);
+    int log2  = ipow(hyp,2);
+    int log10 = ipow(hyp,10);
     velocity = log10 ? velocity/2 + log2*hyp/log10 : 0;
     int speed = (velocity) ? MAX(MOUSE_SPEED*velocity/128, 1) : 0;
     ms[1].PosX = ms[2].PosX + (hyp ? speed*adj/hyp : 0);

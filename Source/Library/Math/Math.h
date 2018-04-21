@@ -3,8 +3,8 @@
 
 #ifndef IMPL_FIXEDPOINT
 int pythagoras(int dx, int dy);
-int pow(int n, int b);
-int sin(int x);
+int ipow(int n, int b);
+int isin(int x);
 #endif IMPL_FIXEDPOINT
 
 #endif LIBRARY_MATH_H

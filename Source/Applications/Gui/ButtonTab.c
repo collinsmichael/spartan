@@ -3,6 +3,7 @@
 
 import IGraphics *Graphics;
 import ICanvas   *Canvas;
+import IEvent    *Event;
 import IWindow   *Window;
 import IWidget   *Widget;
 import ITabBar   *TabBar;
@@ -103,6 +104,7 @@ static bool ButtonOnLoad(CWindow *win, CEvent *evt) {
 }
 
 static bool ButtonOnDraw(CWindow *win, CEvent *evt) {
+    //Debug("ButtonTabOnDraw()\n");
     if (!win->Visible) return true;
 
     CCanvas *canvas = win->Canvas;
@@ -119,6 +121,17 @@ static bool ButtonOnDraw(CWindow *win, CEvent *evt) {
         if (i == 3) x -= 32; // progress label fixup
         Window->TextOut(win, x, y, "%s", names[i]);
     }
+
+
+    progress->Visible = true; Event->Forward(progress, evt);
+    less->Visible     = true; Event->Forward(less, evt);
+    more->Visible     = true; Event->Forward(more, evt);
+    slider->Visible   = true; Event->Forward(slider, evt);
+    scroll->Visible   = true; Event->Forward(scroll, evt);
+    number->Visible   = true; Event->Forward(number, evt);
+    password->Visible = true; Event->Forward(password, evt);
+    username->Visible = true; Event->Forward(username, evt);
+
     Canvas->Blit(canvas, x1, y1, x2, y2);
     if (canvas) canvas->Focus = focus;
     return true;
